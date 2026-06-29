@@ -39,24 +39,23 @@ All required fields must be filled in:
 <li>Score</li>
 <li>Risk Classification</li>
 </ul>
-
-> 💡 If any field is missing, reply (Reply All) requesting the missing information. Continue building the file while you wait — you can add the missing data once received.
-
+<br>
+💡 If any field is missing, reply (Reply All) requesting the missing information. Continue building the file while you wait — you can add the missing data once received.
 </details>
 
 <details>
 <summary>🚫 1.2 — State is not restricted</summary>
 <br>
 The following states are not eligible. If the request comes from one of these, reply to the sales agent stating you cannot work with that state and <strong>do not proceed</strong>:
-
-| State | Code |
-|-------|------|
-| Arizona | AZ |
-| Kansas | KS |
-| Louisiana | LA |
-| West Virginia | WV |
-| Wyoming | WY |
-
+<br><br>
+<table>
+<tr><th>State</th><th>Code</th></tr>
+<tr><td>Arizona</td><td>AZ</td></tr>
+<tr><td>Kansas</td><td>KS</td></tr>
+<tr><td>Louisiana</td><td>LA</td></tr>
+<tr><td>West Virginia</td><td>WV</td></tr>
+<tr><td>Wyoming</td><td>WY</td></tr>
+</table>
 </details>
 
 <details>
@@ -69,7 +68,6 @@ The following states are not eligible. If the request comes from one of these, r
 <li>Factoring Companies</li>
 <li>Reverse Consolidation Companies</li>
 </ul>
-
 <strong>Not allowed:</strong>
 <ul>
 <li>Payday Loans</li>
@@ -79,9 +77,7 @@ The following states are not eligible. If the request comes from one of these, r
 <li>Real Estate Management Companies</li>
 <li>Mortgage Companies</li>
 </ul>
-
-> ⚠️ If the debt type is unclear or does not clearly fall into an allowed category, escalate to Management before proceeding.
-
+⚠️ If the debt type is unclear or does not clearly fall into an allowed category, escalate to Management before proceeding.
 </details>
 
 <details>
@@ -92,9 +88,7 @@ Each opportunity must contain only one type of debt.
 <li>If the merchant has MCA and LOC → create two separate opportunities (one for MCA, one for LOC).</li>
 <li>If the merchant has 2 MCA and 1 LOC → the entire file is handled under BDS, but still as two separate opportunities.</li>
 </ul>
-
-> ⚠️ **Exception:** LOC from OnDeck, Bluevine, or Headway must be treated as MCA. Follow the MCA process for these.
-
+⚠️ <strong>Exception:</strong> LOC from OnDeck, Bluevine, or Headway must be treated as MCA. Follow the MCA process for these.
 </details>
 
 <details>
@@ -127,9 +121,7 @@ Search for the merchant using **all** of the following before creating anything:
 <li><strong>Account is in delinquency status</strong> → review notes and see <a href="./03-special-cases">03 — Special Cases</a> before proceeding.</li>
 <li><strong>Same contact info, different business name</strong> → do not stop the quote. Proceed and include the following note in your Quote Reply to the sales agent:</li>
 </ul>
-
-> *"Here's the Quote. Please be aware that we have an account under the same merchant's name, phone number, or email address. Please clarify before moving forward with the contract request."*
-
+<blockquote><em>"Here's the Quote. Please be aware that we have an account under the same merchant's name, phone number, or email address. Please clarify before moving forward with the contract request."</em></blockquote>
 </details>
 
 ---
@@ -227,12 +219,12 @@ Fill in the following fields:
 <summary>📊 Risk Score fields</summary>
 <br>
 Enter the Risk Score information under the Underwriting section:
-
-| Field | Value |
-|-------|-------|
-| Score | Numeric value from template |
-| Risk Classification | Low / Medium / High from template |
-
+<br><br>
+<table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Score</td><td>Numeric value from template</td></tr>
+<tr><td>Risk Classification</td><td>Low / Medium / High from template</td></tr>
+</table>
 </details>
 
 Click **Save**.
@@ -259,7 +251,6 @@ For each creditor listed on the quote request template:
 <li>If found → use the exact spelling from the Gsheet. Do not use the spelling from the Sales email.</li>
 <li>If not found → proceed to Step 6B.</li>
 </ul>
-
 <strong>Step 6B — Web verification</strong>
 <ul>
 <li>Google the creditor name.</li>
@@ -268,7 +259,6 @@ For each creditor listed on the quote request template:
 <li>If verified → add to Salesforce using the official company name. Notify Management to add it to the Creditors Gsheet (include the website link).</li>
 <li>If not verified → proceed to Step 6C.</li>
 </ul>
-
 <strong>Step 6C — Request clarification from Sales</strong>
 <ul>
 <li>Reply to the sales agent stating the creditor could not be confirmed.</li>
@@ -276,7 +266,6 @@ For each creditor listed on the quote request template:
 <li>If Sales provides updated info → restart at Step 6A.</li>
 <li>If Sales repeats the same name → proceed to Step 6D.</li>
 </ul>
-
 <strong>Step 6D — Request documentation</strong>
 <br><br>
 Request one or more of the following:
@@ -286,26 +275,23 @@ Request one or more of the following:
 <li>Official Website</li>
 <li>Executed Contract with the Creditor</li>
 </ul>
-
 Once received → restart at Step 6A and 6B using the confirmed name.<br>
 If documentation cannot be obtained → escalate to Management via Webex.
-
 </details>
 
 <details>
 <summary>⏳ Enrollment waiting periods</summary>
 <br>
-
-> 💡 Note these now — they apply at contract stage.
-
-| Creditor | Minimum wait |
-|----------|-------------|
-| Standard | 30 days from agreement date. A 25-day exception exists — confirm with Management before applying |
-| Fora & McKenzie | 45 days. If funded between 30–45 days, creditor may only be enrolled with at least two additional creditors. A 25-day exception exists — confirm with Management before applying |
-| Everest / Vader | 45 days after funding. If funded between 30–45 days, creditor may only be enrolled with at least two additional creditors. A 25-day exception exists — confirm with Management before applying |
-| Byzfunder NY LLC | 30 days — note the approximate funded date in the opportunity |
-| Blacklisted creditors | ❌ Never eligible |
-
+💡 Note these now — they apply at contract stage.
+<br><br>
+<table>
+<tr><th>Creditor</th><th>Minimum wait</th></tr>
+<tr><td>Standard</td><td>30 days from agreement date. A 25-day exception exists — confirm with Management before applying.</td></tr>
+<tr><td>Fora &amp; McKenzie</td><td>45 days. If funded between 30–45 days, creditor may only be enrolled with at least two additional creditors. A 25-day exception exists — confirm with Management before applying.</td></tr>
+<tr><td>Everest / Vader</td><td>45 days after funding. If funded between 30–45 days, creditor may only be enrolled with at least two additional creditors. A 25-day exception exists — confirm with Management before applying.</td></tr>
+<tr><td>Byzfunder NY LLC</td><td>30 days — note the approximate funded date in the opportunity.</td></tr>
+<tr><td>Blacklisted creditors</td><td>❌ Never eligible.</td></tr>
+</table>
 </details>
 
 <details>
@@ -313,9 +299,8 @@ If documentation cannot be obtained → escalate to Management via Webex.
 <br>
 <strong>Creditor name contains a slash ( / )</strong><br>
 Use only one name. If Sales provides two, request clarification or ask for the executed contract.
-
+<br><br>
 <hr>
-
 <strong>Lendini / Quickfix (also known as Funding Metrics or FM)</strong><br><br>
 Lendini and Quickfix are the same company. Their funding appears under the names Lendini or Quickfix — this is why we never use "Funding Metrics" or "FM" in Salesforce. Always use <strong>Lendini</strong> or <strong>Quickfix</strong> only.
 <ul>
@@ -326,28 +311,21 @@ Lendini and Quickfix are the same company. Their funding appears under the names
 <li>If denied, do not include in quote and notify Sales immediately.</li>
 <li>Minimum enrolled debt: <strong>$2,500</strong>. Keep payment terms within <strong>4–5 months</strong>. Maximum <strong>7 months</strong> with Management approval.</li>
 </ul>
-
 <hr>
-
 <strong>Reverse Consolidation Companies</strong><br><br>
 Ask Sales: <em>"Are there additional creditors included in this reverse consolidation account?"</em>
 <ul>
 <li>If yes → include the reverse consolidation company name AND each individual creditor with their balance.</li>
 <li>If no → include only the reverse consolidation company name and total balance.</li>
 </ul>
-
 <hr>
-
 <strong>Third-Party Collection Agency</strong>
 <ul>
 <li>Enter the original lender's name in Salesforce.</li>
 <li>Add a NOTE and a NEXT STEP with the following text (do not alter the meaning):</li>
 </ul>
-
-> *"File is already with 3rd party collection agency so if it does progress through the process the Negotiators know that there is no need to engage communications with the lender; negotiations will be handled directly with the collection agency."*
-
+<blockquote><em>"File is already with 3rd party collection agency so if it does progress through the process the Negotiators know that there is no need to engage communications with the lender; negotiations will be handled directly with the collection agency."</em></blockquote>
 <hr>
-
 <strong>Creditor not on the Gsheet</strong>
 <ul>
 <li>Quotes may still be issued.</li>
@@ -356,7 +334,6 @@ Ask Sales: <em>"Are there additional creditors included in this reverse consolid
 <li>All creditor names must be entered in Capitalized Format (e.g. This Is Capitalized).</li>
 <li>Documentation is not required at the Quote stage but will be required before issuing a contract.</li>
 </ul>
-
 </details>
 
 ---
@@ -376,35 +353,33 @@ After Schedule Transactions is complete, fill in the following fields on the opp
 <details>
 <summary>Underwriting section</summary>
 <br>
-
-| Field | Value |
-|-------|-------|
-| Quote Request Date | Today's date |
-| Date of First Payment | FPD from template |
-| Attorney Fee Amount Per Payment | $200.00 |
-| Last Payment Date with Attorney Fee | Same as FPD |
-| Number of Payments with Attorney Fee | 1 |
-| Estimated Total Fee Amount at Time of UW | Total Fees saved from Schedule Transactions |
-| Payback Amount | Total program cost |
-| Savings Fee % UW | Percentage selected during Schedule Transactions |
-| Savings Amount | Total debt − Payback amount |
-
-> 💡 If FPD falls on a holiday or weekend, move to the next business day.
-
+<table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Quote Request Date</td><td>Today's date</td></tr>
+<tr><td>Date of First Payment</td><td>FPD from template</td></tr>
+<tr><td>Attorney Fee Amount Per Payment</td><td>$200.00</td></tr>
+<tr><td>Last Payment Date with Attorney Fee</td><td>Same as FPD</td></tr>
+<tr><td>Number of Payments with Attorney Fee</td><td>1</td></tr>
+<tr><td>Estimated Total Fee Amount at Time of UW</td><td>Total Fees saved from Schedule Transactions</td></tr>
+<tr><td>Payback Amount</td><td>Total program cost</td></tr>
+<tr><td>Savings Fee % UW</td><td>Percentage selected during Schedule Transactions</td></tr>
+<tr><td>Savings Amount</td><td>Total debt − Payback amount</td></tr>
+</table>
+<br>
+💡 If FPD falls on a holiday or weekend, move to the next business day.
 </details>
 
 <details>
 <summary>Pre-Approval section</summary>
 <br>
-
-| Field | Value |
-|-------|-------|
-| Pre-Approval Date | Auto-populated from Quote Request Date |
-| PRE APPROVAL - Offer Expiration Date | Auto-populated (7 days after Quote Request Date) |
-| PRE APPROVAL - Payment Frequency | From template |
-| PRE Approval - Program Length | Term in months |
-| First Payment Amount | From the transaction table |
-
+<table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Pre-Approval Date</td><td>Auto-populated from Quote Request Date</td></tr>
+<tr><td>PRE APPROVAL - Offer Expiration Date</td><td>Auto-populated (7 days after Quote Request Date)</td></tr>
+<tr><td>PRE APPROVAL - Payment Frequency</td><td>From template</td></tr>
+<tr><td>PRE Approval - Program Length</td><td>Term in months</td></tr>
+<tr><td>First Payment Amount</td><td>From the transaction table</td></tr>
+</table>
 </details>
 
 Click **Save**.
@@ -452,7 +427,7 @@ Include:
 <li>Partner: BDS</li>
 </ul>
 
-> 💡 Always add the sales agent to the recipients.
+💡 Always add the sales agent to the recipients.
 
 <details>
 <summary>💳 Credit Card payment rules</summary>
@@ -464,9 +439,7 @@ Include:
 <li>Use the <strong>Min</strong> only if Sales requests an exception and Management approves it.</li>
 <li>If the calculated CC payment (using Default Card Fee) is greater than the first scheduled ACH payment → use the minimum CC payment (1% of enrolled debt).</li>
 </ol>
-
-> Enter the CC payment information under the **Card Payment Info** section of the opportunity.
-
+Enter the CC payment information under the <strong>Card Payment Info</strong> section of the opportunity.
 </details>
 
 ---
