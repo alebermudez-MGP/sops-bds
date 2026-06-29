@@ -1,3 +1,7 @@
+---
+layout: default
+title: 01 — Quote Request
+---
 # 📋 01 — Quote Request
 
 **Trigger:** You received a Quote Request email from a sales agent with the quote request template.
