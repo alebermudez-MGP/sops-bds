@@ -2,6 +2,18 @@
 layout: default
 title: 01 — Quote Request
 ---
+
+<p>
+🏠 <a href="./">Home</a> &nbsp;|&nbsp;
+<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./03-special-cases">03 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./04-quick-reference">04 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./schedule-transactions">Schedule Transactions</a>
+</p>
+
+---
+
 # 📋 01 — Quote Request
 
 **Trigger:** You received a Quote Request email from a sales agent with the quote request template.
@@ -492,3 +504,14 @@ Enter the CC payment information under the <strong>Card Payment Info</strong> se
 ---
 
 *Questions or updates → qa@businessdebtsolutions.com — CC ale.b@businessdebtsolutions.com and joshua.a@businessdebtsolutions.com*
+
+---
+
+<p>
+🏠 <a href="./">Home</a> &nbsp;|&nbsp;
+<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./03-special-cases">03 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./04-quick-reference">04 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./schedule-transactions">Schedule Transactions</a>
+</p>
