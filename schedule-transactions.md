@@ -1,3 +1,7 @@
+---
+layout: default
+title: Schedule Transactions
+---
 # ⚙️ Schedule Transactions
 
 **This is a supporting reference.** It is called from [01 — Quote Request](./01-quote-request) and [02 — Contract Request](./02-contract-request.md). It is not a standalone workflow.
