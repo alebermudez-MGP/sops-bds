@@ -111,8 +111,8 @@ Search for the merchant using **all** of the following before creating anything:
 <details>
 <summary>⚠️ What to do if a duplicate is found</summary>
 
-- **Active account exists** → do not create a new account. Check if this should be a Concurrent. See [03 — Special Cases](./03-special-cases.md).
-- **Account is in delinquency status** → review notes and see [03 — Special Cases](./03-special-cases.md) before proceeding.
+- **Active account exists** → do not create a new account. Check if this should be a Concurrent. See [03 — Special Cases](./03-special-cases).
+- **Account is in delinquency status** → review notes and see [03 — Special Cases](./03-special-cases) before proceeding.
 - **Same contact info, different business name** → do not stop the quote. Proceed and include the following note in your Quote Reply to the sales agent:
 
 > *"Here's the Quote. Please be aware that we have an account under the same merchant's name, phone number, or email address. Please clarify before moving forward with the contract request."*
@@ -336,7 +336,7 @@ Ask Sales: *"Are there additional creditors included in this reverse consolidati
 
 ## Step 7 — ⚙️ Schedule Transactions
 
-➡️ Follow the full instructions in [Schedule Transactions](./schedule-transactions.md).
+➡️ Follow the full instructions in [Schedule Transactions](./schedule-transactions).
 
 Come back to Step 8 once Schedule Transactions is complete.
 
