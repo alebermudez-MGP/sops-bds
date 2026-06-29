@@ -1,11 +1,14 @@
-# 📚 BDS Portfolio — Standard Operating Procedures
+---
+layout: default
+title: BDS Portfolio — SOPs
+---
 
+# 📚 BDS Portfolio — Standard Operating Procedures
 This repository contains the standard operating procedures for the BDS (Business Debt Solutions) portfolio underwriting team.
 
 ---
 
 ## 🗂️ How to use this SOP
-
 Each file covers one complete workflow. Find the one that matches the request you received and follow it start to finish.
 
 ---
@@ -22,6 +25,7 @@ You will convert the existing lead and send the contract.
 
 ### [03 — Special Cases](./03-special-cases)
 Reference this when a file involves any of the following:
+
 - Concurrent accounts
 - Delinquency
 - Collection Review
@@ -30,6 +34,7 @@ Reference this when a file involves any of the following:
 
 ### [04 — Quick Reference Rules](./04-quick-reference)
 Reference this for:
+
 - Restricted states
 - Eligible vs ineligible creditors
 - ACH and payment limits
@@ -47,13 +52,11 @@ Referenced from Quote Request and Contract Request workflows — not a standalon
 ---
 
 ## 📌 Portfolio Scope
-
 All debt types (MCA, LOC, and others) are processed through BDS.
 
 ---
 
 ## ❓ Questions or updates
-
 Email **qa@businessdebtsolutions.com** — CC **ale.b@businessdebtsolutions.com** and **joshua.a@businessdebtsolutions.com**
 
 Do not make assumptions — when in doubt, escalate.
