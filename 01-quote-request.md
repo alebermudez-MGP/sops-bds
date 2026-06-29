@@ -14,30 +14,31 @@ Before doing anything in Salesforce, review the template and confirm all of the 
 
 <details>
 <summary>📝 1.1 — Template is complete</summary>
-
+<br>
 All required fields must be filled in:
-
-- Type of Business Debt
-- Business name
-- State
-- Lead Generated from
-- Lead Sources
-- Campaign ID
-- Entity type
-- Owner's name
-- Phone number
-- Email address
-- Name, balance, frequency and amount per Creditors
-- Term
-- Payment frequency
-- FPD
-- Sales Lead
-- CC as a payment method
-- Industry
-- Business start date
-- Portfolio
-- Score
-- Risk Classification
+<ul>
+<li>Type of Business Debt</li>
+<li>Business name</li>
+<li>State</li>
+<li>Lead Generated from</li>
+<li>Lead Sources</li>
+<li>Campaign ID</li>
+<li>Entity type</li>
+<li>Owner's name</li>
+<li>Phone number</li>
+<li>Email address</li>
+<li>Name, balance, frequency and amount per Creditors</li>
+<li>Term</li>
+<li>Payment frequency</li>
+<li>FPD</li>
+<li>Sales Lead</li>
+<li>CC as a payment method</li>
+<li>Industry</li>
+<li>Business start date</li>
+<li>Portfolio</li>
+<li>Score</li>
+<li>Risk Classification</li>
+</ul>
 
 > 💡 If any field is missing, reply (Reply All) requesting the missing information. Continue building the file while you wait — you can add the missing data once received.
 
@@ -45,8 +46,8 @@ All required fields must be filled in:
 
 <details>
 <summary>🚫 1.2 — State is not restricted</summary>
-
-The following states are not eligible. If the request comes from one of these, reply to the sales agent stating you cannot work with that state and **do not proceed**:
+<br>
+The following states are not eligible. If the request comes from one of these, reply to the sales agent stating you cannot work with that state and <strong>do not proceed</strong>:
 
 | State | Code |
 |-------|------|
@@ -60,20 +61,24 @@ The following states are not eligible. If the request comes from one of these, r
 
 <details>
 <summary>✅ 1.3 — Debt type is eligible</summary>
+<br>
+<strong>Allowed:</strong>
+<ul>
+<li>Merchant Cash Advance (MCA)</li>
+<li>Business Line of Credit (LOC)</li>
+<li>Factoring Companies</li>
+<li>Reverse Consolidation Companies</li>
+</ul>
 
-**Allowed:**
-- Merchant Cash Advance (MCA)
-- Business Line of Credit (LOC)
-- Factoring Companies
-- Reverse Consolidation Companies
-
-**Not allowed:**
-- Payday Loans
-- Leasing / Lease-to-Own
-- Investment Companies
-- Management Companies
-- Real Estate Management Companies
-- Mortgage Companies
+<strong>Not allowed:</strong>
+<ul>
+<li>Payday Loans</li>
+<li>Leasing / Lease-to-Own</li>
+<li>Investment Companies</li>
+<li>Management Companies</li>
+<li>Real Estate Management Companies</li>
+<li>Mortgage Companies</li>
+</ul>
 
 > ⚠️ If the debt type is unclear or does not clearly fall into an allowed category, escalate to Management before proceeding.
 
@@ -81,11 +86,12 @@ The following states are not eligible. If the request comes from one of these, r
 
 <details>
 <summary>📂 1.4 — One debt type per opportunity</summary>
-
+<br>
 Each opportunity must contain only one type of debt.
-
-- If the merchant has MCA and LOC → create two separate opportunities (one for MCA, one for LOC).
-- If the merchant has 2 MCA and 1 LOC → the entire file is handled under BDS, but still as two separate opportunities.
+<ul>
+<li>If the merchant has MCA and LOC → create two separate opportunities (one for MCA, one for LOC).</li>
+<li>If the merchant has 2 MCA and 1 LOC → the entire file is handled under BDS, but still as two separate opportunities.</li>
+</ul>
 
 > ⚠️ **Exception:** LOC from OnDeck, Bluevine, or Headway must be treated as MCA. Follow the MCA process for these.
 
@@ -93,12 +99,12 @@ Each opportunity must contain only one type of debt.
 
 <details>
 <summary>📊 1.5 — Risk Score is present</summary>
-
+<br>
 The template must include Portfolio, Score, and Risk Classification.
-
-- If Score or Portfolio is missing → return to Sales immediately and request the missing information.
-- If a portfolio is referenced but not specified → ask Sales: *"Which portfolio did the Risk Score calculator assign?"*
-
+<ul>
+<li>If Score or Portfolio is missing → return to Sales immediately and request the missing information.</li>
+<li>If a portfolio is referenced but not specified → ask Sales: <em>"Which portfolio did the Risk Score calculator assign?"</em></li>
+</ul>
 </details>
 
 ---
@@ -106,18 +112,21 @@ The template must include Portfolio, Score, and Risk Classification.
 ## Step 2 — 🔍 Check for duplicates in Salesforce
 
 Search for the merchant using **all** of the following before creating anything:
-
-- Business name
-- Owner's name
-- Email address
-- Phone number (use "Search for more results" to expand)
+<ul>
+<li>Business name</li>
+<li>Owner's name</li>
+<li>Email address</li>
+<li>Phone number (use "Search for more results" to expand)</li>
+</ul>
 
 <details>
 <summary>⚠️ What to do if a duplicate is found</summary>
-
-- **Active account exists** → do not create a new account. Check if this should be a Concurrent. See [03 — Special Cases](./03-special-cases).
-- **Account is in delinquency status** → review notes and see [03 — Special Cases](./03-special-cases) before proceeding.
-- **Same contact info, different business name** → do not stop the quote. Proceed and include the following note in your Quote Reply to the sales agent:
+<br>
+<ul>
+<li><strong>Active account exists</strong> → do not create a new account. Check if this should be a Concurrent. See <a href="./03-special-cases">03 — Special Cases</a>.</li>
+<li><strong>Account is in delinquency status</strong> → review notes and see <a href="./03-special-cases">03 — Special Cases</a> before proceeding.</li>
+<li><strong>Same contact info, different business name</strong> → do not stop the quote. Proceed and include the following note in your Quote Reply to the sales agent:</li>
+</ul>
 
 > *"Here's the Quote. Please be aware that we have an account under the same merchant's name, phone number, or email address. Please clarify before moving forward with the contract request."*
 
@@ -205,17 +214,18 @@ Fill in the following fields:
 
 <details>
 <summary>📌 Sales Agent rules</summary>
-
-- No need to ask Sales who the assigned agent is.
-- The Sales Agent can be changed as long as the Sales Lead remains the same.
-- If the Sales Lead is different from what is expected, contact UW Management before proceeding.
-- Any request under Sales Lead **Vic Carmine** must be processed under BDS.
-
+<br>
+<ul>
+<li>No need to ask Sales who the assigned agent is.</li>
+<li>The Sales Agent can be changed as long as the Sales Lead remains the same.</li>
+<li>If the Sales Lead is different from what is expected, contact UW Management before proceeding.</li>
+<li>Any request under Sales Lead <strong>Vic Carmine</strong> must be processed under BDS.</li>
+</ul>
 </details>
 
 <details>
 <summary>📊 Risk Score fields</summary>
-
+<br>
 Enter the Risk Score information under the Underwriting section:
 
 | Field | Value |
@@ -242,40 +252,49 @@ For each creditor listed on the quote request template:
 
 <details>
 <summary>🔎 Creditor verification process (Steps 6A → 6D)</summary>
+<br>
+<strong>Step 6A — Check the Creditors Gsheet first (primary source)</strong>
+<ul>
+<li>Search for the creditor name exactly as it appears on the template.</li>
+<li>If found → use the exact spelling from the Gsheet. Do not use the spelling from the Sales email.</li>
+<li>If not found → proceed to Step 6B.</li>
+</ul>
 
-**Step 6A — Check the Creditors Gsheet first (primary source)**
-- Search for the creditor name exactly as it appears on the template.
-- If found → use the exact spelling from the Gsheet. Do not use the spelling from the Sales email.
-- If not found → proceed to Step 6B.
+<strong>Step 6B — Web verification</strong>
+<ul>
+<li>Google the creditor name.</li>
+<li>If results are unclear, search again adding keywords: <em>lending, lender, funding, funder, cash advance, merchant cash advance.</em></li>
+<li>Verify the company provides an eligible product type.</li>
+<li>If verified → add to Salesforce using the official company name. Notify Management to add it to the Creditors Gsheet (include the website link).</li>
+<li>If not verified → proceed to Step 6C.</li>
+</ul>
 
-**Step 6B — Web verification**
-- Google the creditor name.
-- If results are unclear, search again adding keywords: *lending, lender, funding, funder, cash advance, merchant cash advance.*
-- Verify the company provides an eligible product type.
-- If verified → add to Salesforce using the official company name. Notify Management to add it to the Creditors Gsheet (include the website link).
-- If not verified → proceed to Step 6C.
+<strong>Step 6C — Request clarification from Sales</strong>
+<ul>
+<li>Reply to the sales agent stating the creditor could not be confirmed.</li>
+<li>If similar names were found, include them and ask if there was a typo.</li>
+<li>If Sales provides updated info → restart at Step 6A.</li>
+<li>If Sales repeats the same name → proceed to Step 6D.</li>
+</ul>
 
-**Step 6C — Request clarification from Sales**
-- Reply to the sales agent stating the creditor could not be confirmed.
-- If similar names were found, include them and ask if there was a typo.
-- If Sales provides updated info → restart at Step 6A.
-- If Sales repeats the same name → proceed to Step 6D.
-
-**Step 6D — Request documentation**
-
+<strong>Step 6D — Request documentation</strong>
+<br><br>
 Request one or more of the following:
-- Bank Statements
-- MTD
-- Official Website
-- Executed Contract with the Creditor
+<ul>
+<li>Bank Statements</li>
+<li>MTD</li>
+<li>Official Website</li>
+<li>Executed Contract with the Creditor</li>
+</ul>
 
-Once received → restart at Step 6A and 6B using the confirmed name.
+Once received → restart at Step 6A and 6B using the confirmed name.<br>
 If documentation cannot be obtained → escalate to Management via Webex.
 
 </details>
 
 <details>
 <summary>⏳ Enrollment waiting periods</summary>
+<br>
 
 > 💡 Note these now — they apply at contract stage.
 
@@ -291,48 +310,52 @@ If documentation cannot be obtained → escalate to Management via Webex.
 
 <details>
 <summary>⚠️ Special creditor scenarios</summary>
-
-**Creditor name contains a slash ( / )**
+<br>
+<strong>Creditor name contains a slash ( / )</strong><br>
 Use only one name. If Sales provides two, request clarification or ask for the executed contract.
 
----
+<hr>
 
-**Lendini / Quickfix (also known as Funding Metrics or FM)**
+<strong>Lendini / Quickfix (also known as Funding Metrics or FM)</strong><br><br>
+Lendini and Quickfix are the same company. Their funding appears under the names Lendini or Quickfix — this is why we never use "Funding Metrics" or "FM" in Salesforce. Always use <strong>Lendini</strong> or <strong>Quickfix</strong> only.
+<ul>
+<li>⚠️ Always escalate to Management before proceeding.</li>
+<li>CR requests: do not create the account until approval is obtained.</li>
+<li>US Sales requests: account creation may begin, but do not send the quote until approval is granted.</li>
+<li>If approved, Management will provide the applicable card payment amount.</li>
+<li>If denied, do not include in quote and notify Sales immediately.</li>
+<li>Minimum enrolled debt: <strong>$2,500</strong>. Keep payment terms within <strong>4–5 months</strong>. Maximum <strong>7 months</strong> with Management approval.</li>
+</ul>
 
-Lendini and Quickfix are the same company. Their funding appears under the names Lendini or Quickfix — this is why we never use "Funding Metrics" or "FM" in Salesforce. Always use **Lendini** or **Quickfix** only.
+<hr>
 
-- ⚠️ Always escalate to Management before proceeding.
-- CR requests: do not create the account until approval is obtained.
-- US Sales requests: account creation may begin, but do not send the quote until approval is granted.
-- If approved, Management will provide the applicable card payment amount.
-- If denied, do not include in quote and notify Sales immediately.
-- Minimum enrolled debt: **$2,500**. Keep payment terms within **4–5 months**. Maximum **7 months** with Management approval.
+<strong>Reverse Consolidation Companies</strong><br><br>
+Ask Sales: <em>"Are there additional creditors included in this reverse consolidation account?"</em>
+<ul>
+<li>If yes → include the reverse consolidation company name AND each individual creditor with their balance.</li>
+<li>If no → include only the reverse consolidation company name and total balance.</li>
+</ul>
 
----
+<hr>
 
-**Reverse Consolidation Companies**
-
-Ask Sales: *"Are there additional creditors included in this reverse consolidation account?"*
-- If yes → include the reverse consolidation company name AND each individual creditor with their balance.
-- If no → include only the reverse consolidation company name and total balance.
-
----
-
-**Third-Party Collection Agency**
-
-- Enter the original lender's name in Salesforce.
-- Add a NOTE and a NEXT STEP with the following text (do not alter the meaning):
+<strong>Third-Party Collection Agency</strong>
+<ul>
+<li>Enter the original lender's name in Salesforce.</li>
+<li>Add a NOTE and a NEXT STEP with the following text (do not alter the meaning):</li>
+</ul>
 
 > *"File is already with 3rd party collection agency so if it does progress through the process the Negotiators know that there is no need to engage communications with the lender; negotiations will be handled directly with the collection agency."*
 
----
+<hr>
 
-**Creditor not on the Gsheet**
-- Quotes may still be issued.
-- Add an ALERT in Salesforce.
-- 🚫 Do not use placeholder names like "Creditor 1" or "Creditor 2".
-- All creditor names must be entered in Capitalized Format (e.g. This Is Capitalized).
-- Documentation is not required at the Quote stage but will be required before issuing a contract.
+<strong>Creditor not on the Gsheet</strong>
+<ul>
+<li>Quotes may still be issued.</li>
+<li>Add an ALERT in Salesforce.</li>
+<li>🚫 Do not use placeholder names like "Creditor 1" or "Creditor 2".</li>
+<li>All creditor names must be entered in Capitalized Format (e.g. This Is Capitalized).</li>
+<li>Documentation is not required at the Quote stage but will be required before issuing a contract.</li>
+</ul>
 
 </details>
 
@@ -352,6 +375,7 @@ After Schedule Transactions is complete, fill in the following fields on the opp
 
 <details>
 <summary>Underwriting section</summary>
+<br>
 
 | Field | Value |
 |-------|-------|
@@ -371,6 +395,7 @@ After Schedule Transactions is complete, fill in the following fields on the opp
 
 <details>
 <summary>Pre-Approval section</summary>
+<br>
 
 | Field | Value |
 |-------|-------|
@@ -419,22 +444,26 @@ Creditors and balances:
 Reply All to the original quote request email using the **Quote Reply** template (found in Gmail → three dots → Templates).
 
 Include:
-- Total Program Cost
-- CC Amount
-- CC Processor Fee
-- CC Process Payment Amount
-- Partner: BDS
+<ul>
+<li>Total Program Cost</li>
+<li>CC Amount</li>
+<li>CC Processor Fee</li>
+<li>CC Process Payment Amount</li>
+<li>Partner: BDS</li>
+</ul>
 
 > 💡 Always add the sales agent to the recipients.
 
 <details>
 <summary>💳 Credit Card payment rules</summary>
-
-1. Open the new calculator and enter the enrolled debt amount.
-2. The calculator will show Max and Min CC amounts.
-3. Always use the **Max** amount.
-4. Use the **Min** only if Sales requests an exception and Management approves it.
-5. If the calculated CC payment (using Default Card Fee) is greater than the first scheduled ACH payment → use the minimum CC payment (1% of enrolled debt).
+<br>
+<ol>
+<li>Open the new calculator and enter the enrolled debt amount.</li>
+<li>The calculator will show Max and Min CC amounts.</li>
+<li>Always use the <strong>Max</strong> amount.</li>
+<li>Use the <strong>Min</strong> only if Sales requests an exception and Management approves it.</li>
+<li>If the calculated CC payment (using Default Card Fee) is greater than the first scheduled ACH payment → use the minimum CC payment (1% of enrolled debt).</li>
+</ol>
 
 > Enter the CC payment information under the **Card Payment Info** section of the opportunity.
 
