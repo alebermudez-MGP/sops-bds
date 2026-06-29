@@ -336,7 +336,7 @@ Ask Sales: *"Are there additional creditors included in this reverse consolidati
 
 ## Step 7 — ⚙️ Schedule Transactions
 
-➡️ Follow the full instructions in [03 — Schedule Transactions](./03-schedule-transactions.md).
+➡️ Follow the full instructions in [Schedule Transactions](./schedule-transactions.md).
 
 Come back to Step 8 once Schedule Transactions is complete.
 
