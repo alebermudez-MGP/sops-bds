@@ -29,25 +29,22 @@ The system will display the creditors linked to the opportunity. Verify they are
 <details>
 <summary>📋 Which plan do I use?</summary>
 <br>
+There are four plans available in Salesforce. <strong>Always use only the BDS Services plans</strong> — these are associated with the Actum processor. Do not use the Business Debt Solutions plans unless Management explicitly instructs otherwise.
+<br><br>
+<table>
+<tr><th>Plan</th><th>Processor</th><th>Use?</th></tr>
+<tr><td><strong>BDS Services Standard</strong></td><td>Actum</td><td>✅ Default</td></tr>
+<tr><td><strong>BDS Services Under $15K</strong></td><td>Actum</td><td>✅ Default</td></tr>
+<tr><td>Business Debt Solutions Standard</td><td>Kapcharge</td><td>🚫 Only if Management instructs</td></tr>
+<tr><td>Business Debt Solutions Under $15K</td><td>Kapcharge</td><td>🚫 Only if Management instructs</td></tr>
+</table>
+<br>
 <strong>By debt amount</strong>
 <br><br>
 <table>
 <tr><th>Debt Amount</th><th>Plan to use in Salesforce</th></tr>
-<tr><td>Under $15,000</td><td><strong>BDS Services Under $15k</strong> or <strong>Business Debt Solutions Under $15K</strong></td></tr>
-<tr><td>$15,000 and over</td><td>Use the plan that matches the merchant's state (see table below)</td></tr>
-</table>
-<br>
-<strong>By state</strong>
-<br><br>
-<table>
-<tr><th>State</th><th>Plan to use in Salesforce</th></tr>
-<tr><td>Florida</td><td><strong>BDS Services Standard</strong> or <strong>Business Debt Solutions Standard</strong> (Florida plan values)</td></tr>
-<tr><td>Georgia</td><td><strong>BDS Services Standard</strong> or <strong>Business Debt Solutions Standard</strong> (Georgia plan values)</td></tr>
-<tr><td>Idaho</td><td><strong>BDS Services Standard</strong> or <strong>Business Debt Solutions Standard</strong> (Idaho plan values)</td></tr>
-<tr><td>Michigan</td><td><strong>BDS Services Standard</strong> or <strong>Business Debt Solutions Standard</strong> (Michigan plan values)</td></tr>
-<tr><td>Minnesota</td><td><strong>BDS Services Standard</strong> or <strong>Business Debt Solutions Standard</strong> (Minnesota plan values)</td></tr>
-<tr><td>Ohio</td><td><strong>BDS Services Standard</strong> or <strong>Business Debt Solutions Standard</strong> (Ohio plan values)</td></tr>
-<tr><td>All other states</td><td><strong>BDS Services Standard</strong> or <strong>Business Debt Solutions Standard</strong> (Standard plan values)</td></tr>
+<tr><td>Under $15,000</td><td><strong>BDS Services Under $15K</strong></td></tr>
+<tr><td>$15,000 and over</td><td><strong>BDS Services Standard</strong> — use the values that match the merchant's state (see Step 3)</td></tr>
 </table>
 <br>
 🚫 Never select a plan with the word <strong>Legal</strong> — these are not in use.
@@ -227,6 +224,22 @@ Use the tables below to enter the correct values for each plan. Always verify ag
 💡 Exceptions apply as long as Est. Savings is not showing as negative and Management approves.<br><br>
 💡 <strong>FM / Lendini / Quickfix deals:</strong> Keep payment terms within 4–5 months. Maximum 7 months with Management approval.
 </details>
+
+---
+
+## Step 3.1 — Select the Compensation Template
+
+After entering all plan values, select the compensation template that matches the plan you selected.
+<br><br>
+<table>
+<tr><th>Plan selected</th><th>Compensation Template</th></tr>
+<tr><td>BDS Services Standard</td><td><strong>BDS Services Standard</strong></td></tr>
+<tr><td>BDS Services Under $15K</td><td><strong>BDS Services Standard</strong></td></tr>
+<tr><td>Business Debt Solutions Standard</td><td><strong>BDS Standard</strong></td></tr>
+<tr><td>Business Debt Solutions Under $15K</td><td><strong>BDS Standard</strong></td></tr>
+</table>
+<br>
+⚠️ <strong>Default is always Actum (BDS Services plans).</strong> The Business Debt Solutions plans use the Kapcharge processor and should only be used if explicitly instructed by Management.
 
 ---
 
