@@ -1,6 +1,6 @@
 # ⚙️ Schedule Transactions
 
-**This is a supporting reference.** It is called from [01 — Quote Request](./01-quote-request.md) and [02 — Contract Request](./02-contract-request.md). It is not a standalone workflow.
+**This is a supporting reference.** It is called from [01 — Quote Request](./01-quote-request) and [02 — Contract Request](./02-contract-request.md). It is not a standalone workflow.
 
 > 💡 Always have both tools open before starting this process:
 > - 🧮 [BDS Calculator](https://alebermudez-mgp.github.io/sops-bds/bds-calculator.html) — Program Cost & CC Payment
@@ -245,7 +245,7 @@ Once saved, the transaction table will populate on the opportunity. Verify:
 ## ↩️ Return to your workflow
 
 - If you came from **Quote Request** → return to [01 — Quote Request, Step 8](./01-quote-request.md#step-8----complete-underwriting-and-pre-approval-fields)
-- If you came from **Contract Request** → return to [02 — Contract Request](./02-contract-request.md)
+- If you came from **Contract Request** → return to [02 — Contract Request](./02-contract-request)
 
 ---
 
