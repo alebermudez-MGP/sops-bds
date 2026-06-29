@@ -2,6 +2,18 @@
 layout: default
 title: Schedule Transactions
 ---
+
+<p>
+🏠 <a href="./">Home</a> &nbsp;|&nbsp;
+<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./03-special-cases">03 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./04-quick-reference">04 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./schedule-transactions">Schedule Transactions</a>
+</p>
+
+---
+
 # ⚙️ Schedule Transactions
 
 **This is a supporting reference.** It is called from [01 — Quote Request](./01-quote-request) and [02 — Contract Request](./02-contract-request). It is not a standalone workflow.
@@ -284,3 +296,14 @@ Use the **Edit Existing** option when an update is needed on a file already sche
 ---
 
 *Questions or updates → qa@businessdebtsolutions.com — CC ale.b@businessdebtsolutions.com and joshua.a@businessdebtsolutions.com*
+
+---
+
+<p>
+🏠 <a href="./">Home</a> &nbsp;|&nbsp;
+<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./03-special-cases">03 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./04-quick-reference">04 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./schedule-transactions">Schedule Transactions</a>
+</p>
