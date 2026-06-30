@@ -52,7 +52,7 @@ A Concurrent should only be created if the original account is already enrolled.
 <li>Remember to check the cutoff time.</li>
 </ul>
 </li>
-<li><strong>If the 1st payment is in Pending or Cleared status:</strong>
+<li><strong>If the 1st payment is in Processed or Cleared status:</strong>
 <ul><li>You must proceed with a Concurrent.</li></ul>
 </li>
 <li><strong>If a CC payment is made before the scheduled 1st payment:</strong>
@@ -105,6 +105,8 @@ Example: If a merchant has Business #1 with one lender under BDS, and later enro
 <li>When we receive a request to create a concurrent account, we will assign the <strong>same client service agent</strong> who is already assigned to the original account, to ensure continuity and consistency.</li>
 <li>Concurrents do not apply to different debts — a concurrent applies only when the debt type is the same within the same portfolio. If it is a different debt, even if it belongs to the same client, it should not be considered concurrent.</li>
 </ul>
+<br>
+📩 <strong>QA Reminder:</strong> To avoid errors, carefully verify the debt type and portfolio before creating or assigning a file as concurrent. Double-check this information to ensure accuracy in our processes.
 </details>
 
 ---
@@ -171,8 +173,7 @@ Send an email to the Sales Agent to confirm whether the merchant intends to cont
 <li>Underwriting (UW) will email Customer Service (CS) requesting assistance in helping the merchant get back on track and advising them to follow up with the Sales Agent.</li>
 <li>Once the merchant is back on track, the status can be updated or transactions reactivated. This action may be completed by either UW or CS.</li>
 </ol>
-💡 CS email references:<br>
-DAG: <strong>clientsupport@dag-law.com</strong><br>
+💡 CS email reference:<br>
 BDS: <strong>clientsupport@businessdebtsolutions.com</strong>
 <br><br>
 <strong>If the Merchant Decides Not to Continue With the File:</strong>
@@ -190,7 +191,7 @@ BDS: <strong>clientsupport@businessdebtsolutions.com</strong>
 <details>
 <summary>🔄 Correct process for merchant portfolio switches</summary>
 <br>
-To switch from one portfolio to another (BDS, DAG, or MDA), follow these steps carefully to ensure clean documentation and accurate records.
+To switch from one portfolio to another (BDS or DAG), follow these steps carefully to ensure clean documentation and accurate records.
 <br><br>
 <strong>Close the original portfolio file:</strong>
 <ol>
