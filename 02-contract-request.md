@@ -27,7 +27,7 @@ title: 02 — Contract Request
 
 ## Step 1 — Validate the request before touching Salesforce
 
-Before doing anything in Salesforce, review the email and confirm all of the following.
+Before doing anything in Salesforce, review both the email and the lead record.
 
 <details>
 <summary>📝 1.1 — Template is complete</summary>
@@ -56,61 +56,91 @@ The Contract Request template must include all of the following fields:
 </details>
 
 <details>
-<summary>📎 1.2 — Required documents are attached</summary>
+<summary>🔍 1.2 — Verify the lead in Salesforce</summary>
 <br>
-The following must be included with the contract request:
-<ul>
-<li><strong>Quote previously sent to the client</strong> — confirm the program cost, FPD, and creditors match what was quoted.</li>
-<li><strong>Valid voided check</strong> — primary banking document required for enrollment.</li>
-</ul>
-If a voided check is not available, the following combination is accepted <strong>without prior approval</strong>:
-<ul>
-<li>Bank Letter <strong>AND</strong> Most Recent Bank Statement</li>
-</ul>
-Any other documentation requires <strong>Sales Management approval</strong> documented in the same email thread.<br><br>
-⚠️ Starter checks and direct deposit forms are <strong>not accepted</strong>.
+Before converting, open the lead and verify the following fields are populated:
+<br><br>
+<table>
+<tr><th>Field</th><th>What to check</th></tr>
+<tr><td>Lead Source</td><td>Must be present</td></tr>
+<tr><td>Sales Lead</td><td>Must be present — if different from what is expected, contact UW Management before proceeding</td></tr>
+<tr><td>Sales Agent</td><td>Must be present — it is OK if it does not match the agent sending the contract request, as long as the Sales Lead is the same</td></tr>
+<tr><td>Score</td><td>Must be present — numeric value assigned by the Risk Score calculator</td></tr>
+<tr><td>Risk Classification</td><td>Must be present — Low / Medium / High</td></tr>
+<tr><td>Payment Capacity</td><td>Must be present — e.g. Tight – Some strain, Comfortable, etc.</td></tr>
+<tr><td>Portfolio</td><td>Must match the portfolio on the contract request template</td></tr>
+</table>
+<br>
+💡 If Score, Risk Classification, or Payment Capacity is missing → return to Sales immediately and request the missing information before proceeding.
 </details>
 
 <details>
-<summary>🏦 1.3 — Voided check is valid</summary>
+<summary>📄 1.3 — Quote is attached and matches</summary>
 <br>
-A valid voided check must include:
+The sales agent must attach the quote previously sent to the client. Review it and confirm:
+<ul>
+<li>Business name matches</li>
+<li>Total Program Cost matches what is in Salesforce</li>
+<li>FPD matches the template</li>
+<li>Creditors and amounts are consistent with what was quoted</li>
+</ul>
+If the quote does not match Salesforce data, do not proceed — clarify with Sales before generating the contract.
+</details>
+
+<details>
+<summary>📎 1.4 — Banking documentation is attached and valid</summary>
+<br>
+The following must be included with the contract request:
+<br><br>
+<strong>Primary (preferred):</strong>
+<ul>
+<li>Valid Voided Check</li>
+</ul>
+<strong>Accepted alternative (no approval needed):</strong>
+<ul>
+<li>Bank Letter <strong>AND</strong> Most Recent Bank Statement</li>
+</ul>
+<strong>Any other documentation requires Sales Management approval</strong> documented in the same email thread.<br><br>
+⚠️ Starter checks and direct deposit forms are <strong>not accepted</strong>.<br><br>
+
+<strong>Voided check must include:</strong>
 <ul>
 <li>Routing number (9 digits)</li>
 <li>Account number</li>
 <li>Business name (printed by the bank)</li>
 <li>Bank name</li>
 </ul>
-<strong>Special cases:</strong>
-<br><br>
-<strong>Bank of America</strong> — Use the ACH routing number labeled under the bank name. Do not use the wire routing number.
-<br><br>
-<strong>Bluevine</strong> — Voided checks may only show a logo. Banking services are provided by Coastal Community Bank (Member FDIC). Verify by entering routing number <strong>125109019</strong> — it should populate as Coastal Community Bank.
-<br><br>
-<strong>Navy Federal Credit Union</strong> — Omit the prefix 001 or 002 from the account number. These are internal identifiers. Example: if VC shows 0017151093775, enter <strong>7151093775</strong>.
-<br><br>
-<strong>State on voided check</strong> — The state on the business address of the voided check must match the state provided by Sales. If it does not match, request clarification before proceeding.
-<br><br>
+
+<strong>Special cases:</strong><br><br>
+
+<strong>Bank of America</strong> — Use the ACH routing number labeled under the bank name. Do not use the wire routing number.<br><br>
+
+<strong>Bluevine</strong> — Voided checks may only show a logo. Banking services are provided by Coastal Community Bank (Member FDIC). Verify by entering routing number <strong>125109019</strong> — it should populate as Coastal Community Bank. Reference: <a href="https://www.bluevine.com/">bluevine.com</a><br><br>
+
+<strong>Navy Federal Credit Union</strong> — Omit the prefix 001 or 002 from the account number. These are internal identifiers and should not be entered in Salesforce. Example: if VC shows 0017151093775, enter <strong>7151093775</strong>.<br><br>
+
+<strong>State on voided check</strong> — The state on the business address must match the state provided by Sales. If it does not match, request clarification before proceeding.<br><br>
+
 <strong>Business name mismatch</strong> — If the business name on the voided check does not match the account name in Salesforce, email Sales:
 <blockquote><em>"Hello [Sales Agent], please be aware that the business name on the voided check does not match the business name provided when the account was created. Reply with the correct business name."</em></blockquote>
-<strong>Sole Proprietor exception</strong> — If the merchant is a sole proprietor, the owner's personal name may appear as the Name on Account. This is acceptable as long as you confirm the account is a business account (via bank statement or bank letter). No name change is required in Salesforce.
+
+<strong>Sole Proprietor exception</strong> — The owner's personal name may appear as the Name on Account. This is acceptable as long as you confirm the account is a business account via bank statement or bank letter. No name change is required in Salesforce.
 </details>
 
 ---
 
-## Step 2 — Find the lead in Salesforce
+## Step 2 — Find and convert the lead in Salesforce
 
-Search for the lead using the business name from the email subject line.
-
-1. Locate the most recent **Lead** record for this merchant.
-2. Click **Convert** on the lead.
-3. Choose one of the following:
+1. Search for the lead using the business name from the email subject line.
+2. Locate the most recent **Lead** record.
+3. Click **Convert** on the lead.
+4. Choose one of the following:
 <ul>
 <li><strong>Create all new records</strong> — for new merchants with no existing account.</li>
 <li><strong>Continue working on an existing account</strong> — for concurrent merchants. Create a new opportunity under the existing account and contact. Do not select an existing opportunity.</li>
 </ul>
 
-The conversion process will create an **Account**, a **Contact**, and an **Opportunity**.
+The conversion will create an **Account**, a **Contact**, and an **Opportunity**.
 
 > ⚠️ For concurrent merchants, always create a **new opportunity**. Never modify an existing active opportunity. See [03 — Special Cases](./03-special-cases) for concurrent rules.
 
@@ -118,7 +148,7 @@ The conversion process will create an **Account**, a **Contact**, and an **Oppor
 
 ## Step 3 — Complete the Account
 
-Verify and complete all required fields on the account:
+Verify and complete all required fields:
 <br><br>
 <table>
 <tr><th>Field</th><th>Value</th></tr>
@@ -139,7 +169,7 @@ Verify and complete all required fields on the account:
 
 ## Step 4 — Complete the Contact
 
-Verify and complete all required fields on the contact:
+Verify and complete all required fields:
 <br><br>
 <table>
 <tr><th>Field</th><th>Value</th></tr>
@@ -155,7 +185,7 @@ Verify and complete all required fields on the contact:
 <br>
 💡 If the merchant has two owners, create a second contact with the co-owner's information and set Title to <strong>Co-Owner</strong>.
 
-### 4.1 — Confirm Contact Role on the Opportunity
+### 4.1 — Set the Contact Role on the Opportunity
 
 Go to the opportunity → Contact Roles section:
 <ol>
@@ -171,7 +201,7 @@ Go to the opportunity → Contact Roles section:
 
 ## Step 5 — Complete the Opportunity
 
-Verify all opportunity fields are complete. Pay special attention to:
+Verify all opportunity fields are complete:
 <br><br>
 <table>
 <tr><th>Field</th><th>Value</th></tr>
@@ -179,35 +209,17 @@ Verify all opportunity fields are complete. Pay special attention to:
 <tr><td>Stage</td><td>Underwriting</td></tr>
 <tr><td>Status</td><td>Approved / Send Contract</td></tr>
 <tr><td>Type of debt</td><td>From original quote</td></tr>
-<tr><td>Date of First Payment (FPD)</td><td>From template — 3–4 business days minimum, up to 7. Extension requires Management approval.</td></tr>
-<tr><td>Lead Source</td><td>From original quote</td></tr>
+<tr><td>Date of First Payment (FPD)</td><td>From template — minimum 3–4 business days, up to 7. Extension requires Management approval.</td></tr>
+<tr><td>Lead Source</td><td>From original quote/lead</td></tr>
+<tr><td>Score</td><td>From lead</td></tr>
+<tr><td>Risk Classification</td><td>From lead</td></tr>
 </table>
 <br>
-
-> 💡 Review the quote document against the transaction table to confirm the information matches or is reasonably aligned with what was sent to the merchant.
-
----
-
-## Step 6 — Add Banking Information
-
-Go to the **Account** → Banking Information section and enter the following from the voided check:
-<ul>
-<li>Bank name</li>
-<li>Routing number — verify at <a href="https://www.usbanklocations.com/">usbanklocations.com</a> to retrieve bank name and city</li>
-<li>Account number</li>
-<li>Bank full address</li>
-<li>Name on Account</li>
-</ul>
-
-Click **Save**.
-
-Then click **Update Banking Info** (upper right corner of the account). Click **Next** to confirm. Navigate to the Opportunity → Enrollment Plan to verify banking information is correctly linked to the transactions.
-
-After adding banking information, add the address to both the **Account** and the **Contact**. Retrieve from the voided check or banking documentation. If only a PO box is provided, look up the address and confirm with Sales before proceeding.
+💡 Review the quote document against the transaction table to confirm all amounts and dates align with what was sent to the merchant.
 
 ---
 
-## Step 7 — Add EIN to the Account
+## Step 6 — Add EIN to the Account
 
 Enter the EIN (Tax ID) in the designated field on the account.
 
@@ -215,25 +227,75 @@ Enter the EIN (Tax ID) in the designated field on the account.
 
 ---
 
-## Step 8 — ACH vs Banking Info QA Revision
+## Step 7 — Add Banking Information
 
-Before generating the contract:
+Go to the **Account** → **Banking Information** section.
+
+### 7.1 — Enter the banking details
+
+Fill in the following fields from the voided check:
+<br><br>
+<table>
+<tr><th>Field</th><th>How to fill it</th></tr>
+<tr><td>Bank Name</td><td>Look up the routing number at <a href="https://www.usbanklocations.com/">usbanklocations.com</a> — enter the routing number and the site will return the official bank name and city. Use the exact name returned by the site.</td></tr>
+<tr><td>Routing Number</td><td>9-digit number from the voided check — first set of numbers on the bottom left</td></tr>
+<tr><td>Account Number</td><td>Middle set of numbers on the bottom of the check. Enter exactly as it appears — see special cases in Step 1.4 for Navy Federal and other exceptions.</td></tr>
+<tr><td>Bank Full Address</td><td>Use the bank city returned by usbanklocations.com to look up the bank's full address. Enter the full street address, city, state, and zip.</td></tr>
+<tr><td>Name on Account</td><td>Business name as it appears on the voided check. For sole proprietors, the owner's name is acceptable — see Step 1.4.</td></tr>
+</table>
+<br>
+Click <strong>Save</strong>.
+
+### 7.2 — Update Banking Info
+
+After saving, click the **Update Banking Info** button in the upper right corner of the account page.
+
+This will open a confirmation screen showing the banking details. Click **Next** to apply the banking information to all transactions in the Enrollment Plan.
+
+### 7.3 — Verify in Enrollment Plan
+
+Navigate to the **Opportunity** → **Enrollment Plan** tab. Open any transaction and confirm the banking information has been correctly linked.
+
+---
+
+## Step 8 — Add Address to Account and Contact
+
+After saving the banking information, add the business address to both the **Account** and the **Contact**.
+
+### 8.1 — Where to get the address
+
+Use the following hierarchy:
 <ol>
-<li>Take a screenshot showing the bank account information section in Salesforce along with all other relevant details.</li>
-<li>Collect a screenshot of the merchant's voided check (or bank statement showing routing and account numbers).</li>
-<li>Send both screenshots to the Webex chat: <strong>🟦 "ACH vs Banking Info QA Revision"</strong></li>
-<li>Wait for QA approval before proceeding.</li>
+<li><strong>Voided check</strong> — use the business address printed on the check (primary source).</li>
+<li><strong>If the address is missing or shows a PO Box</strong> → search for the business address online and ask Sales to confirm it is correct before proceeding.</li>
+<li><strong>Sales confirms or provides the correct address</strong> → enter it and proceed.</li>
 </ol>
 
-> 🔔 Do not skip this step. Missing it can lead to delays, additional documentation requests, and a negative client experience.
+### 8.2 — Add address to the Account
+
+Go to the Account → **Address Information** section:
+<ul>
+<li>Enter the full business address in the <strong>Billing Address</strong> fields: street, city, state, zip.</li>
+<li>Confirm the <strong>Billing State/Province</strong> matches the state on the template.</li>
+</ul>
+
+### 8.3 — Add address to the Contact
+
+Go to the Contact → **Details** tab → **Address Information** section:
+<ul>
+<li>Enter the same business address in the <strong>Mailing Address</strong> fields: street, city, state, zip.</li>
+<li>Confirm the <strong>Mailing State/Province</strong> populated correctly.</li>
+</ul>
+
+> ⚠️ The state on the business address of the voided check must match the state provided by Sales when the account was created. If they do not match, request clarification before proceeding.
 
 ---
 
 ## Step 9 — Generate the Contract
 
-Once QA approves, generate the contract from the opportunity:
+Once all information is complete:
 
-1. Click the dropdown arrow → select **Create DAG Full Contract**.
+1. Click the dropdown arrow on the opportunity → select **Create DAG Full Contract**.
 2. **Download** the generated document.
 3. Open it and review all details against Salesforce:
 <ul>
@@ -246,7 +308,7 @@ Once QA approves, generate the contract from the opportunity:
 4. If everything matches → click **Send for Signature**.
 5. Immediately after sending to the client, forward a copy to the sales agent from the underwriting inbox. No exceptions.
 
-> ⚠️ Contracts can only be generated from **quotes@businessdebtsolutions.com**. If you receive a "no permission" message, you are not using the correct user.
+> ⚠️ Contracts can only be generated from <strong>quotes@businessdebtsolutions.com</strong>. If you receive a "no permission" message, you are not using the correct user.
 
 <details>
 <summary>📋 DocuSign — Send for Signature steps</summary>
@@ -277,7 +339,7 @@ Once sent, the status will show as <strong>Sent for Signature</strong>.
 
 ## Step 10 — Add Notes to the Opportunity
 
-After sending the contract, add a note with the following information:
+After sending the contract, add a note with the following:
 
 ```
 Contract sent
@@ -289,7 +351,7 @@ Banking Info Review
 Business Name matches: Y
 ```
 
-> 💡 If the quote and contract request arrived at the same time (combined request), do not send the quote separately — send only the contract. Include both the quote notes and the contract notes in a single note entry.
+> 💡 If the quote and contract request arrived at the same time, do not send the quote separately — send only the contract. Include both the quote and contract note content in a single note entry.
 
 ---
 
@@ -308,7 +370,7 @@ Include:
 
 Attach a **PDF copy of the contract** to the reply.
 
-> 💡 Also forward a copy of all documents sent to the merchant to: **teamnotification@businessdebtninjas.com**
+> 💡 Also forward a copy of all documents sent to the merchant to: <strong>teamnotification@businessdebtninjas.com</strong>
 
 ---
 
@@ -317,7 +379,6 @@ Attach a **PDF copy of the contract** to the reply.
 | Situation | Stage | Status |
 |-----------|-------|--------|
 | Contract sent | Underwriting | Approved / Send Contract |
-| Waiting for missing documents | Underwriting | Send Contract |
 | Contract sent with incomplete docs | Underwriting | Send Contract — add Next Step: "Missing documents to enroll" |
 
 > ⚠️ Do NOT move to Enrollment Pending until all required documents are received and verified.
@@ -341,17 +402,19 @@ Attach a **PDF copy of the contract** to the reply.
 ## ✅ Contract Request Checklist
 
 - [ ] Contract Request template received with all required fields
-- [ ] Quote previously sent to client is attached
+- [ ] Lead verified in Salesforce — Lead Source, Sales Lead, Sales Agent, Score, Risk Classification, Payment Capacity, Portfolio all present
+- [ ] Quote previously sent to client is attached and matches Salesforce data
 - [ ] Valid banking documentation attached (voided check or approved alternative)
-- [ ] Lead found in Salesforce and converted
+- [ ] Lead found and converted in Salesforce
 - [ ] Account complete (all fields, no special characters)
 - [ ] Contact complete (SSN, DOB, State confirmed)
 - [ ] Contact Role set to Business User / Primary
-- [ ] Opportunity fields complete (FPD, Stage, Status, Lead Source)
+- [ ] Opportunity fields complete (FPD, Stage, Status, Lead Source, Score, Risk Classification)
 - [ ] EIN added to account (or note left if missing)
-- [ ] Banking information entered and Updated Banking Info button clicked
-- [ ] Address added to Account and Contact
-- [ ] ACH vs Banking Info QA screenshot sent to Webex and approved
+- [ ] Banking information entered (Bank Name from usbanklocations.com, Routing, Account, Address, Name on Account)
+- [ ] Update Banking Info button clicked and verified in Enrollment Plan
+- [ ] Address added to Account (Billing Address) and Contact (Mailing Address)
+- [ ] Address state matches template state
 - [ ] Contract generated, downloaded, and reviewed against Salesforce
 - [ ] Contract sent for signature via DocuSign
 - [ ] Contract copy forwarded to sales agent immediately after sending
