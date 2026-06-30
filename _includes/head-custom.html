@@ -1,10 +1,152 @@
-sops-bds/
-├── _config.yml
-├── _includes/
-│   └── head-custom.html   ← archivo nuevo
-├── index.md
-├── README.md
-├── 01-quote-request.md
-├── 02-contract-request.md
-├── schedule-transactions.md
-└── bds-calculator.html
+<style>
+  #bds-lock-overlay {
+    position: fixed;
+    inset: 0;
+    background: #1a3c2e;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  #bds-lock-box {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    width: 90%;
+    max-width: 340px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  #bds-lock-box h2 {
+    margin: 0 0 8px 0;
+    color: #1a3c2e;
+    font-size: 20px;
+  }
+  #bds-lock-box p {
+    margin: 0 0 20px 0;
+    color: #555;
+    font-size: 14px;
+  }
+  #bds-lock-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 4px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+  }
+  #bds-lock-input:focus {
+    outline: none;
+    border-color: #2eb85c;
+  }
+  #bds-lock-btn {
+    width: 100%;
+    padding: 10px;
+    background: #2eb85c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #bds-lock-btn:hover {
+    background: #25994a;
+  }
+  #bds-lock-error {
+    color: #c0392b;
+    font-size: 13px;
+    margin-top: 10px;
+    display: none;
+  }
+  body.bds-locked {
+    overflow: hidden;
+  }
+</style>
+
+<script>
+(function () {
+  // Código hasheado (no se guarda en texto plano)
+  var CORRECT_HASH = "a1f3c2"; // hash simple del código
+
+  function simpleHash(str) {
+    var hash = 0;
+    for (var i = 0; i < str.length; i++) {
+      hash = (hash << 5) - hash + str.charCodeAt(i);
+      hash |= 0;
+    }
+    return Math.abs(hash).toString(16);
+  }
+
+  // Generar el hash real del código asignado
+  var REAL_CODE_HASH = simpleHash("8525");
+
+  function checkAccess() {
+    return sessionStorage.getItem("bds_sop_access") === REAL_CODE_HASH;
+  }
+
+  function grantAccess() {
+    sessionStorage.setItem("bds_sop_access", REAL_CODE_HASH);
+    var overlay = document.getElementById("bds-lock-overlay");
+    if (overlay) overlay.remove();
+    document.body.classList.remove("bds-locked");
+  }
+
+  function showLock() {
+    document.body.classList.add("bds-locked");
+
+    var overlay = document.createElement("div");
+    overlay.id = "bds-lock-overlay";
+    overlay.innerHTML =
+      '<div id="bds-lock-box">' +
+      '<h2>🔒 Acceso Restringido</h2>' +
+      '<p>SOP BDS Portfolio Underwriting<br>Ingresa el código de acceso</p>' +
+      '<input type="password" id="bds-lock-input" maxlength="10" inputmode="numeric" placeholder="••••" autocomplete="off">' +
+      '<button id="bds-lock-btn">Ingresar</button>' +
+      '<div id="bds-lock-error">Código incorrecto. Intenta de nuevo.</div>' +
+      "</div>";
+
+    document.body.appendChild(overlay);
+
+    var input = document.getElementById("bds-lock-input");
+    var btn = document.getElementById("bds-lock-btn");
+    var error = document.getElementById("bds-lock-error");
+
+    function attempt() {
+      var val = input.value.trim();
+      if (simpleHash(val) === REAL_CODE_HASH) {
+        grantAccess();
+      } else {
+        error.style.display = "block";
+        input.value = "";
+        input.focus();
+      }
+    }
+
+    btn.addEventListener("click", attempt);
+    input.addEventListener("keyup", function (e) {
+      if (e.key === "Enter") attempt();
+    });
+
+    setTimeout(function () {
+      input.focus();
+    }, 100);
+  }
+
+  function init() {
+    if (!checkAccess()) {
+      showLock();
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>
