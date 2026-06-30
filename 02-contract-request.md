@@ -100,7 +100,7 @@ The following must be included with the contract request:
 <ul>
 <li>Bank Letter <strong>AND</strong> Most Recent Bank Statement</li>
 </ul>
-<strong>Any other documentation requires Sales Management approval</strong> documented in the same email thread.<br><br>
+Any other documentation requires <strong>Sales Management approval</strong> documented in the same email thread.<br><br>
 ⚠️ Starter checks and direct deposit forms are <strong>not accepted</strong>.<br><br>
 
 <strong>Voided check must include:</strong>
@@ -238,9 +238,9 @@ Fill in the following fields from the voided check:
 <table>
 <tr><th>Field</th><th>How to fill it</th></tr>
 <tr><td>Bank Name</td><td>Look up the routing number at <a href="https://www.usbanklocations.com/">usbanklocations.com</a> — enter the routing number and the site will return the official bank name and city. Use the exact name returned by the site.</td></tr>
-<tr><td>Routing Number</td><td>9-digit number from the voided check — first set of numbers on the bottom left</td></tr>
+<tr><td>Routing Number</td><td>9-digit number from the voided check — most of the time the first set of numbers on the bottom left</td></tr>
 <tr><td>Account Number</td><td>Middle set of numbers on the bottom of the check. Enter exactly as it appears — see special cases in Step 1.4 for Navy Federal and other exceptions.</td></tr>
-<tr><td>Bank Full Address</td><td>Use the bank city returned by usbanklocations.com to look up the bank's full address. Enter the full street address, city, state, and zip.</td></tr>
+<tr><td>Bank Full Address</td><td>Use the bank city returned by usbanklocations.com and enter the city and state.</td></tr>
 <tr><td>Name on Account</td><td>Business name as it appears on the voided check. For sole proprietors, the owner's name is acceptable — see Step 1.4.</td></tr>
 </table>
 <br>
@@ -248,13 +248,11 @@ Click <strong>Save</strong>.
 
 ### 7.2 — Update Banking Info
 
-After saving, click the **Update Banking Info** button in the upper right corner of the account page.
-
-This will open a confirmation screen showing the banking details. Click **Next** to apply the banking information to all transactions in the Enrollment Plan.
+After saving, click the **Update Banking Info** button in the upper right corner of the account page. Click **Next** to apply the banking information to all transactions in the Enrollment Plan.
 
 ### 7.3 — Verify in Enrollment Plan
 
-Navigate to the **Opportunity** → **Enrollment Plan** tab. Open any transaction and confirm the banking information has been correctly linked.
+> ⚠️ This step cannot be completed until [Schedule Transactions](./schedule-transactions) has been done. Once complete, navigate to the **Opportunity** → **Enrollment Plan** tab. Open any transaction and confirm the banking information has been correctly linked.
 
 ---
 
@@ -275,7 +273,8 @@ Use the following hierarchy:
 
 Go to the Account → **Address Information** section:
 <ul>
-<li>Enter the full business address in the <strong>Billing Address</strong> fields: street, city, state, zip.</li>
+<li>Enter the business address in the <strong>Billing Address</strong> fields: street, city, state, zip.</li>
+<li>Set <strong>Country</strong> to <strong>US</strong> (not United States).</li>
 <li>Confirm the <strong>Billing State/Province</strong> matches the state on the template.</li>
 </ul>
 
@@ -284,6 +283,7 @@ Go to the Account → **Address Information** section:
 Go to the Contact → **Details** tab → **Address Information** section:
 <ul>
 <li>Enter the same business address in the <strong>Mailing Address</strong> fields: street, city, state, zip.</li>
+<li>Set <strong>Country</strong> to <strong>US</strong> (not United States).</li>
 <li>Confirm the <strong>Mailing State/Province</strong> populated correctly.</li>
 </ul>
 
@@ -295,7 +295,7 @@ Go to the Contact → **Details** tab → **Address Information** section:
 
 Once all information is complete:
 
-1. Click the dropdown arrow on the opportunity → select **Create DAG Full Contract**.
+1. Click the dropdown arrow on the opportunity → select **Create BDS Full Contract**.
 2. **Download** the generated document.
 3. Open it and review all details against Salesforce:
 <ul>
@@ -305,14 +305,12 @@ Once all information is complete:
 <li>SSN / EIN / DOB</li>
 <li>Bank (ACH) details vs voided check</li>
 </ul>
-4. If everything matches → click **Send for Signature**.
-5. Immediately after sending to the client, forward a copy to the sales agent from the underwriting inbox. No exceptions.
+4. If everything matches → proceed to Send for Signature.
 
 > ⚠️ Contracts can only be generated from <strong>quotes@businessdebtsolutions.com</strong>. If you receive a "no permission" message, you are not using the correct user.
 
-<details>
-<summary>📋 DocuSign — Send for Signature steps</summary>
-<br>
+### 9.1 — Send for Signature via DocuSign
+
 <ol>
 <li>Click <strong>Send for Signature</strong> → <strong>Next</strong> on the documents screen.</li>
 <li><strong>Recipients</strong> — review only, do not modify. Confirm client name and email are correct for Sales Team and Sales Agent.</li>
@@ -320,8 +318,8 @@ Once all information is complete:
 <li>Add signature and date indicators on the last 4 pages.</li>
 <li>Click <strong>Send</strong>.</li>
 </ol>
+
 Once sent, the status will show as <strong>Sent for Signature</strong>.
-</details>
 
 <details>
 <summary>🔧 DocuSign Actions</summary>
@@ -337,9 +335,28 @@ Once sent, the status will show as <strong>Sent for Signature</strong>.
 
 ---
 
-## Step 10 — Add Notes to the Opportunity
+## Step 10 — Send the Email Reply to the Sales Agent
 
-After sending the contract, add a note with the following:
+Immediately after sending the contract to the client, reply All to the original contract request email using the **Contract Sent Additional Details** template (Gmail → three dots → Templates).
+
+Include:
+<ul>
+<li>Total Program Cost</li>
+<li>CC Amount</li>
+<li>CC Processor Fee</li>
+<li>CC Process Payment Amount</li>
+<li>Partner: BDS</li>
+</ul>
+
+Attach a **PDF copy of the contract** to the reply.
+
+> 💡 Make sure to CC <strong>teamnotification@businessdebtninjas.com</strong> on all documents sent to the client when the Sales Lead is Rose Walters.
+
+---
+
+## Step 11 — Add Notes to the Opportunity
+
+After sending the contract and the email reply, add a note with the following:
 
 ```
 Contract sent
@@ -355,31 +372,17 @@ Business Name matches: Y
 
 ---
 
-## Step 11 — Send the Email Reply to the Sales Agent
-
-Reply All to the original contract request email using the **Contract Sent Additional Details** template (Gmail → three dots → Templates).
-
-Include:
-<ul>
-<li>Total Program Cost</li>
-<li>CC Amount</li>
-<li>CC Processor Fee</li>
-<li>CC Process Payment Amount</li>
-<li>Partner: BDS</li>
-</ul>
-
-Attach a **PDF copy of the contract** to the reply.
-
-> 💡 Also forward a copy of all documents sent to the merchant to: <strong>teamnotification@businessdebtninjas.com</strong>
-
----
-
 ## Step 12 — Update Opportunity Status
 
-| Situation | Stage | Status |
-|-----------|-------|--------|
-| Contract sent | Underwriting | Approved / Send Contract |
+To maintain accurate reporting, all files must follow this status path regardless of whether a quote was sent:
+
+| Step | Stage | Status |
+|------|-------|--------|
+| 1 — Always set first | Lead | Quote Sent |
+| 2 — Once contract is sent | Underwriting | Approved / Send Contract |
 | Contract sent with incomplete docs | Underwriting | Send Contract — add Next Step: "Missing documents to enroll" |
+
+> ⚠️ Do NOT skip the Quote Sent status even if no quote was sent. This is required to maintain order in the reports.
 
 > ⚠️ Do NOT move to Enrollment Pending until all required documents are received and verified.
 
@@ -393,7 +396,7 @@ Attach a **PDF copy of the contract** to the reply.
 
 > 🚫 **Two ACH forms:** When creating a BDS contract, there will always be two ACH forms that must be completed by the merchant — whether the opportunity has one owner or both an owner and co-owner.
 
-> 📨 **Documents from clients not yet enrolled, under Sales Lead Rose Walters:** Forward to teamnotification@businessdebtninjas.com
+> 📨 **Documents from clients not yet enrolled, under Sales Lead Rose Walters:** CC teamnotification@businessdebtninjas.com on all documents sent to the client.
 
 > 📨 **Documents from enrolled clients (any sales lead):** Forward to clientsupport@businessdebtsolutions.com
 
@@ -411,17 +414,17 @@ Attach a **PDF copy of the contract** to the reply.
 - [ ] Contact Role set to Business User / Primary
 - [ ] Opportunity fields complete (FPD, Stage, Status, Lead Source, Score, Risk Classification)
 - [ ] EIN added to account (or note left if missing)
-- [ ] Banking information entered (Bank Name from usbanklocations.com, Routing, Account, Address, Name on Account)
-- [ ] Update Banking Info button clicked and verified in Enrollment Plan
-- [ ] Address added to Account (Billing Address) and Contact (Mailing Address)
+- [ ] Banking information entered (Bank Name from usbanklocations.com, Routing, Account, City/State, Name on Account)
+- [ ] Update Banking Info button clicked
+- [ ] Address added to Account (Billing Address) and Contact (Mailing Address) — Country set to US
 - [ ] Address state matches template state
 - [ ] Contract generated, downloaded, and reviewed against Salesforce
 - [ ] Contract sent for signature via DocuSign
-- [ ] Contract copy forwarded to sales agent immediately after sending
+- [ ] Email reply sent to sales agent immediately (Reply All) with contract PDF attached
+- [ ] teamnotification@businessdebtninjas.com CC'd if Sales Lead is Rose Walters
 - [ ] Notes added to opportunity
-- [ ] Email reply sent to sales agent (Reply All) with contract PDF attached
-- [ ] Copy forwarded to teamnotification@businessdebtninjas.com
 - [ ] Opportunity status updated
+- [ ] Enrollment Plan banking info verified (after Schedule Transactions)
 
 ---
 
