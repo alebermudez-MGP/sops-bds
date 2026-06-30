@@ -291,7 +291,47 @@ Go to the Contact → **Details** tab → **Address Information** section:
 
 ---
 
-## Step 9 — Generate the Contract
+## Step 9 — Schedule Transactions
+
+Since the quote was sent externally by Sales, UW has not yet created the program. Before generating the contract, you must build the plan.
+
+➡️ Follow the full instructions in [Schedule Transactions](./schedule-transactions).
+
+Come back to Step 10 once Schedule Transactions is complete.
+
+> ⚠️ The resulting <strong>Total Program Cost must not exceed</strong> the amount quoted to the client. If you cannot reach the quoted amount, <strong>inform Management before proceeding</strong> with the contract.
+
+---
+
+## Step 10 — Complete Underwriting and Pre-Approval fields
+
+After Schedule Transactions is complete, fill in the following fields on the opportunity:
+
+<details>
+<summary>Underwriting section</summary>
+<br>
+<table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Date of First Payment</td><td>FPD from template</td></tr>
+<tr><td>Attorney Fee Amount Per Payment</td><td>$200.00</td></tr>
+<tr><td>Last Payment Date with Attorney Fee</td><td>Same as FPD</td></tr>
+<tr><td>Number of Payments with Attorney Fee</td><td>1</td></tr>
+<tr><td>Estimated Total Fee Amount at Time of UW</td><td>Total Fees saved from Schedule Transactions</td></tr>
+<tr><td>Payback Amount</td><td>Total program cost — must not exceed the amount quoted to the client</td></tr>
+<tr><td>Savings Fee % UW</td><td>Percentage selected during Schedule Transactions</td></tr>
+<tr><td>Savings Amount</td><td>Total debt − Payback amount</td></tr>
+</table>
+<br>
+💡 If FPD falls on a holiday or weekend, move to the next business day.
+</details>
+
+> ⚠️ Before continuing, confirm the Total Program Cost matches or is below what was quoted to the client. If there is any discrepancy that cannot be resolved, escalate to Management before generating the contract.
+
+Click **Save**.
+
+---
+
+## Step 11 — Generate the Contract
 
 Once all information is complete:
 
@@ -309,7 +349,7 @@ Once all information is complete:
 
 > ⚠️ Contracts can only be generated from <strong>quotes@businessdebtsolutions.com</strong>. If you receive a "no permission" message, you are not using the correct user.
 
-### 9.1 — Send for Signature via DocuSign
+### 11.1 — Send for Signature via DocuSign
 
 <ol>
 <li>Click <strong>Send for Signature</strong> → <strong>Next</strong> on the documents screen.</li>
@@ -335,7 +375,7 @@ Once sent, the status will show as <strong>Sent for Signature</strong>.
 
 ---
 
-## Step 10 — Send the Email Reply to the Sales Agent
+## Step 12 — Send the Email Reply to the Sales Agent
 
 Immediately after sending the contract to the client, reply All to the original contract request email using the **Contract Sent Additional Details** template (Gmail → three dots → Templates).
 
@@ -354,7 +394,7 @@ Attach a **PDF copy of the contract** to the reply.
 
 ---
 
-## Step 11 — Add Notes to the Opportunity
+## Step 13 — Add Notes to the Opportunity
 
 After sending the contract and the email reply, add a note with the following:
 
@@ -372,7 +412,7 @@ Business Name matches: Y
 
 ---
 
-## Step 12 — Update Opportunity Status
+## Step 14 — Update Opportunity Status
 
 To maintain accurate reporting, all files must follow this status path regardless of whether a quote was sent:
 
@@ -418,6 +458,9 @@ To maintain accurate reporting, all files must follow this status path regardles
 - [ ] Update Banking Info button clicked
 - [ ] Address added to Account (Billing Address) and Contact (Mailing Address) — Country set to US
 - [ ] Address state matches template state
+- [ ] Schedule Transactions completed — Total Program Cost does not exceed the quoted amount
+- [ ] Management informed if quoted amount could not be matched
+- [ ] Underwriting fields completed (FPD, Attorney Fee, Payback Amount, Savings)
 - [ ] Contract generated, downloaded, and reviewed against Salesforce
 - [ ] Contract sent for signature via DocuSign
 - [ ] Email reply sent to sales agent immediately (Reply All) with contract PDF attached
