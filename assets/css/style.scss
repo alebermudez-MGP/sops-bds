@@ -1,0 +1,57 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ===== Section subtitles (## Section X) ===== */
+.page-content h2 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  padding: 10px 16px;
+  background-color: #1a3c2e;
+  color: #ffffff !important;
+  border-radius: 6px;
+  border-bottom: none;
+  font-size: 22px;
+}
+
+.page-content h2:first-of-type {
+  margin-top: 24px;
+}
+
+/* ===== Collapsible blocks (<details>) ===== */
+.page-content details {
+  margin-bottom: 18px;
+  padding: 14px 18px;
+  border: 1px solid #d8d8d8;
+  border-left: 4px solid #2eb85c;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+.page-content details + h2 {
+  margin-top: 56px;
+}
+
+.page-content details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1a3c2e;
+  padding: 4px 0;
+}
+
+.page-content details summary:hover {
+  color: #2eb85c;
+}
+
+.page-content details[open] summary {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+/* extra breathing room between consecutive details blocks */
+.page-content details ~ details {
+  margin-top: 0;
+}
