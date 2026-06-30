@@ -21,7 +21,9 @@
 
 /* ===== Collapsible blocks (<details>) ===== */
 .page-content details {
-  margin-bottom: 18px;
+  display: block;
+  margin-top: 28px !important;
+  margin-bottom: 28px !important;
   padding: 14px 18px;
   border: 1px solid #d8d8d8;
   border-left: 4px solid #2eb85c;
@@ -29,8 +31,31 @@
   background-color: #fafafa;
 }
 
-.page-content details + h2 {
-  margin-top: 56px;
+/* space after ANY element that comes right before a details block */
+.page-content h2 + details,
+.page-content h3 + details,
+.page-content p + details,
+.page-content ul + details,
+.page-content ol + details,
+.page-content table + details,
+.page-content blockquote + details,
+.page-content details + details {
+  margin-top: 28px !important;
+}
+
+/* space after a details block, before whatever follows */
+.page-content details + h2,
+.page-content details + h3 {
+  margin-top: 56px !important;
+}
+
+.page-content details + p,
+.page-content details + ul,
+.page-content details + ol,
+.page-content details + table,
+.page-content details + blockquote,
+.page-content details + hr {
+  margin-top: 28px !important;
 }
 
 .page-content details summary {
@@ -51,7 +76,9 @@
   padding-bottom: 10px;
 }
 
-/* extra breathing room between consecutive details blocks */
-.page-content details ~ details {
-  margin-top: 0;
+/* blockquotes (the ⚠️ Exception / 💡 tip callouts) need breathing room too */
+.page-content blockquote {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  padding: 10px 16px;
 }
