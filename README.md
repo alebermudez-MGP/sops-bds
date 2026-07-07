@@ -25,7 +25,11 @@ You will create the Account, Contact, and Opportunity from scratch and send the 
 Use this when a sales agent sends a **Contract Request** email with the contract request template.
 You will convert the existing lead and send the contract.
 
-### [03 — Special Cases](./03-special-cases)
+### [03 — Enrollment](./03-enrollment)
+Use this when you receive the **DocuSign notification** confirming the merchant signed the contract.
+You will review the signed contract, send the enrollment emails, process the PayNow link, run the Bulk Processor Update (Actum), and record the enrollment.
+
+### [04 — Special Cases](./04-special-cases)
 Reference this when a file involves any of the following:
 <ul>
 <li>Concurrent accounts</li>
@@ -35,7 +39,7 @@ Reference this when a file involves any of the following:
 <li>Re-enrollment</li>
 </ul>
 
-### [04 — Quick Reference Rules](./04-quick-reference)
+### [05 — Quick Reference Rules](./05-quick-reference)
 Reference this for:
 <ul>
 <li>Restricted states</li>
