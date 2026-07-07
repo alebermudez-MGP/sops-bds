@@ -7,8 +7,9 @@ title: 01 — Quote Request
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
 <a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
 <a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-special-cases">03 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./04-quick-reference">04 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
 <a href="./schedule-transactions">Schedule Transactions</a>
 </p>
 
@@ -129,8 +130,8 @@ Search for the merchant using **all** of the following before creating anything:
 <summary>⚠️ What to do if a duplicate is found</summary>
 <br>
 <ul>
-<li><strong>Active account exists</strong> → do not create a new account. Check if this should be a Concurrent. See <a href="./03-special-cases">03 — Special Cases</a>.</li>
-<li><strong>Account is in delinquency status</strong> → review notes and see <a href="./03-special-cases">03 — Special Cases</a> before proceeding.</li>
+<li><strong>Active account exists</strong> → do not create a new account. Check if this should be a Concurrent. See <a href="./04-special-cases">04 — Special Cases</a>.</li>
+<li><strong>Account is in delinquency status</strong> → review notes and see <a href="./04-special-cases">04 — Special Cases</a> before proceeding.</li>
 <li><strong>Same contact info, different business name</strong> → do not stop the quote. Proceed and include the following note in your Quote Reply to the sales agent:</li>
 </ul>
 <blockquote><em>"Here's the Quote. Please be aware that we have an account under the same merchant's name, phone number, or email address. Please clarify before moving forward with the contract request."</em></blockquote>
@@ -511,7 +512,8 @@ Enter the CC payment information under the <strong>Card Payment Info</strong> se
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
 <a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
 <a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-special-cases">03 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./04-quick-reference">04 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
 <a href="./schedule-transactions">Schedule Transactions</a>
 </p>
