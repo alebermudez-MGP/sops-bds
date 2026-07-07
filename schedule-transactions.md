@@ -7,8 +7,9 @@ title: Schedule Transactions
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
 <a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
 <a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-special-cases">03 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./04-quick-reference">04 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
 <a href="./schedule-transactions">Schedule Transactions</a>
 </p>
 
@@ -303,7 +304,8 @@ Use the **Edit Existing** option when an update is needed on a file already sche
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
 <a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
 <a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-special-cases">03 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./04-quick-reference">04 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
 <a href="./schedule-transactions">Schedule Transactions</a>
 </p>
