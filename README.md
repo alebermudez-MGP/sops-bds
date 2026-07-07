@@ -57,6 +57,10 @@ Reference this for:
 Step-by-step instructions for scheduling transactions in Salesforce.
 Referenced from Quote Request and Contract Request workflows — not a standalone process.
 
+### [Move Payments (MPR)](./move-payments)
+How to process a Move Payment Request on an enrolled BDS opportunity.
+Includes the one-move-only rule, previous payment status checks, and the 1 PM EST same-day cutoff.
+
 ---
 
 ## 📌 Portfolio Scope
