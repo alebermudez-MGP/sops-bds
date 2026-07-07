@@ -17,7 +17,7 @@ title: 04 — Special Cases
 
 # ⚠️ 04 — Special Cases
 
-Reference this page when a file involves Concurrent accounts, Delinquency, Collection Review, Portfolio switches, or Re-enrollment.
+Reference this page when a file involves Concurrent accounts, Delinquency, Collection Review, Portfolio switches, Re-enrollment, or Bank Account Updates.
 
 ---
 
@@ -221,6 +221,36 @@ When a merchant who previously did not continue (see Collection Review above) de
 <li>Once the program cost matches the calculator amount, add a <strong>2-month add-on fee</strong>, which will increase the program cost.</li>
 </ul>
 ⚠️ If the merchant already paid a substantial amount of fees previously, consult your immediate Supervisor or Manager before proceeding — an exception may apply.
+</details>
+
+---
+
+## Section 6 — Bank Account Updates
+
+<details>
+<summary>🏦 Required documentation for bank account updates</summary>
+<br>
+This policy applies to all bank account updates requested by clients — both <strong>existing enrolled clients</strong> and those <strong>requesting a new contract</strong>.
+<br><br>
+To process the client's request, you must secure <strong>one</strong> of the following forms of documentation:
+<ul>
+<li>A valid <strong>Voided Check</strong>, or</li>
+<li>An official <strong>Bank Letter</strong> AND the client's <strong>Most Recent Bank Statement</strong>.</li>
+</ul>
+⚠️ <strong>Starter Checks and Direct Deposit Forms are no longer valid documents</strong> for this verification process.
+<br><br>
+Requests submitted without one of the approved options will be <strong>delayed</strong> until the correct documentation is provided.
+</details>
+
+<details>
+<summary>🆕 Exception — brand new accounts with limited documentation</summary>
+<br>
+For the specific scenario of a <strong>brand new account</strong> where the merchant cannot provide a valid Voided Check or recent statements, you must obtain <strong>both</strong> of the following documents:
+<ul>
+<li>A <strong>Starter Check</strong></li>
+<li>An official <strong>Bank Letter</strong></li>
+</ul>
+This stricter requirement for new accounts is necessary to ensure the provided information is valid before continuing with the process.
 </details>
 
 ---
