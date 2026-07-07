@@ -354,7 +354,7 @@ Once all information is complete:
 
 <ol>
 <li>Click <strong>Send for Signature</strong> → <strong>Next</strong> on the documents screen.</li>
-<li><strong>Recipients</strong> — review only, do not modify. Confirm client name and email are correct for Sales Team and Sales Agent.</li>
+<li><strong>Recipients</strong> — review only, do not modify. Confirm client name and email are correct for Sales Team and Sales Agent. Check whether you are working with <strong>Fintrilo</strong> or <strong>Business Debt Ninjas</strong> to avoid sending to the wrong one.</li>
 <li><strong>Email Subject</strong> — copy and paste the business name from notepad. Do not type it manually. Click <strong>Next</strong>.</li>
 <li>Add signature and date indicators on the last 4 pages.</li>
 <li>Click <strong>Send</strong>.</li>
