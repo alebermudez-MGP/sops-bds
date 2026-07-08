@@ -98,6 +98,12 @@
   border: none;
   border-radius: 6px;
   outline: none;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sop-search-input::placeholder {
+  color: #666666;
 }
 
 .sop-search-input:focus {
