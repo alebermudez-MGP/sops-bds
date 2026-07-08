@@ -21,7 +21,7 @@ title: PayNow Link
 
 **Trigger:** You need to send a client a secure card payment link (PayNow) — during enrollment ([03 — Enrollment](./03-enrollment), Step 4) or any other time UW needs to collect a card payment.
 
-> 💡 **Applies to both BDS and DAG.** UW generates the link directly in NMI — it is **not requested from Management**. Access credentials for NMI are provided by Management.
+> 💡 UW generates the link directly in NMI — it is **not requested from Management**. Access credentials for NMI are provided by Management.
 
 ---
 
@@ -56,13 +56,13 @@ After selecting Collect Checkout, you'll be taken to a new page. Click **Button 
 
 Fill in the following fields:
 
-| Field | BDS | DAG |
-|---|---|---|
-| **SKU** | Client's case number `[BDS-XXX]` | Client's case number `[DAG-XXX]` |
-| **Descripción** | Business name + `"BDS Partial Payment Fee"` | Business name + `"DAG Partial Payment Fee"` |
-| **Costo** | CC Process Payment Amount | CC Process Payment Amount |
+| Field | Value |
+|---|---|
+| **SKU** | Client's case number `[BDS-XXX]` |
+| **Descripción** | Business name + `"BDS Partial Payment Fee"` |
+| **Costo** | CC Process Payment Amount |
 
-> ⚠️ The BDS wording above follows the same pattern as the confirmed DAG wording — confirm the exact BDS label with Management/QA before treating it as final.
+> ⚠️ This wording is inferred by analogy, not confirmed — verify the exact SKU/Descripción label with Management/QA before treating it as final.
 
 Once completed, click **Save**.
 
@@ -95,7 +95,7 @@ Copy the generated link — you'll paste it into the client's file in Salesforce
 <br>
 <ol>
 <li>Go to the Envelope and click <strong>Send</strong>.</li>
-<li>Use the official template: <strong>Secure Payment Link email</strong> (BDS or DAG PayNow link template, depending on the portfolio).</li>
+<li>Use the official template: <strong>Secure Payment Link email</strong> (BDS PayNow link template).</li>
 <li><strong>To:</strong> Client. <strong>BCC:</strong> Sales Agent — always BCC the sales agent.</li>
 <li>Paste the PayNow link in the <strong>body</strong> of the email.</li>
 </ol>
@@ -123,7 +123,7 @@ Copy the generated link — you'll paste it into the client's file in Salesforce
 - [ ] Payment link generated via Create Link
 - [ ] Link pasted into Salesforce → Card Payment Info → PayNow Link
 - [ ] Opportunity saved
-- [ ] Secure Payment Link email sent (To: client, BCC: sales agent, link in body, correct BDS/DAG template)
+- [ ] Secure Payment Link email sent (To: client, BCC: sales agent, link in body, BDS template)
 
 ---
 
