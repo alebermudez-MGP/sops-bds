@@ -60,6 +60,9 @@ Includes the one-move-only rule, previous payment status checks, and the 1 PM ES
 ### [Chirp Review Process](./chirp-review)
 How to verify banking information, account ownership, creditor activity, and recent funding using Chirp, including creditor tenure rules, recent funding scenarios, files that need payments paused, and Bank Refresh for returned payments.
 
+### [PayNow Link](./paynow-link)
+How to generate a PayNow link directly in NMI (Collect Checkout → Button Generator) and send it to the client. Applies to both BDS and DAG.
+
 ---
 
 ## 📌 Portfolio Scope
