@@ -116,13 +116,15 @@ Use this first. If your finding is listed here, this tells you what to do and wh
 
 ## 🔑 Acceso y Setup
 
-### Section 1 — Purpose {: #sec1}
+<a id="sec1"></a>
+### Section 1 — Purpose
 
 This SOP explains how UW should review completed Chirp verifications, identify banking or creditor findings, document the file in Salesforce, and handle Bank Refresh requests for returned payments.
 
 More specific scenarios should always be escalated to UW Management if there is any doubt before moving the file forward.
 
-### Section 2 — Scope {: #sec2}
+<a id="sec2"></a>
+### Section 2 — Scope
 
 This SOP applies to:
 
@@ -132,7 +134,8 @@ This SOP applies to:
 - Files that require Sales, CS, Accounting, or UW Management involvement as a result of a Chirp finding.
 - Both the **BDS** and **DAG** portfolios.
 
-### Section 3 — When to Review Chirp {: #sec3}
+<a id="sec3"></a>
+### Section 3 — When to Review Chirp
 
 At this moment, we do not have a system notification that alerts us when a client completes Chirp. Because of this, the team must review Chirp several times during the day and keep the review process organized and fair.
 
@@ -147,7 +150,8 @@ At this moment, we do not have a system notification that alerts us when a clien
 ⚠️ Credentials should <strong>not</strong> be shared without approval.
 </details>
 
-### Section 4 — How to Find a File in Chirp {: #sec4}
+<a id="sec4"></a>
+### Section 4 — How to Find a File in Chirp
 
 <details>
 <summary>📋 Step-by-step</summary>
@@ -179,7 +183,8 @@ Start the review and update the sheet with:
 </ul>
 </details>
 
-### Section 5 — Required Salesforce Update {: #sec5}
+<a id="sec5"></a>
+### Section 5 — Required Salesforce Update
 
 > ⚠️ **This step cannot be skipped.** Complete it before continuing with the full review.
 
@@ -193,7 +198,8 @@ Go to the <strong>Underwriting</strong> section in the opportunity and update:
 If the field already has a date, review it and update it if needed based on the most recent Chirp completion date.
 </details>
 
-### Section 6 — Open the Chirp Request {: #sec6}
+<a id="sec6"></a>
+### Section 6 — Open the Chirp Request
 
 <details>
 <summary>🔍 Steps</summary>
@@ -209,7 +215,8 @@ Do <strong>not</strong> use: <strong>Request (Information Entered)</strong>. The
 
 ## 🏦 Revisión Bancaria y Discrepancias
 
-### Section 7 — Banking Information Review {: #sec7}
+<a id="sec7"></a>
+### Section 7 — Banking Information Review
 
 Review the following information under **Response (Information Returned)**:
 
@@ -233,7 +240,8 @@ Also review all accounts available in the account dropdown, not only the account
 | Account name does not match | 🟡 Review docs and ownership |
 | Account seems to belong to another person/business | 🔴 Contact Sales before moving forward |
 
-### Section 8 — Account Number Mismatch {: #sec8}
+<a id="sec8"></a>
+### Section 8 — Account Number Mismatch
 
 If the account number in Chirp does not match Salesforce or the banking documents, contact Sales. Sales must confirm one of the following:
 
@@ -255,7 +263,8 @@ To continue with the review, please confirm how the client will proceed:
 Thank you.
 </details>
 
-### Section 9 — Routing Number Mismatch {: #sec9}
+<a id="sec9"></a>
+### Section 9 — Routing Number Mismatch
 
 If the account number matches but the routing number does not match, ask Sales to clarify the discrepancy before moving forward.
 
@@ -273,7 +282,8 @@ Thank you.
 
 If the routing issue is still unclear, escalate it to UW Management.
 
-### Section 10 — Different Bank in Chirp {: #sec10}
+<a id="sec10"></a>
+### Section 10 — Different Bank in Chirp
 
 If Salesforce shows one bank and Chirp shows a completely different bank, Sales must confirm one of these options:
 
@@ -297,7 +307,8 @@ Could you please confirm how the client will proceed:
 Thank you.
 </details>
 
-### Section 11 — Credit Union / FCU Accounts {: #sec11}
+<a id="sec11"></a>
+### Section 11 — Credit Union / FCU Accounts
 
 Credit Union or FCU accounts may show the account number in a different format. However, UW should not automatically approve every mismatch.
 
@@ -305,7 +316,8 @@ Review these cases case by case. If needed, request a bank statement to confirm 
 
 The file can continue only if the information supports that it is the correct account and there are no other concerns.
 
-### Section 12 — Account Name and Owner Name {: #sec12}
+<a id="sec12"></a>
+### Section 12 — Account Name and Owner Name
 
 The account name should match the business information as closely as possible. Also confirm the owner name.
 
@@ -323,7 +335,8 @@ Add a clear note explaining why the account name was accepted.
 
 ## 💰 Depósitos, Tenure y Funding de Creditores
 
-### Section 13 — Deposits and Withdrawals Review {: #sec13}
+<a id="sec13"></a>
+### Section 13 — Deposits and Withdrawals Review
 
 Scroll down to **Deposits and Withdrawals**. Review if any enrolled creditor made recent deposits into any of the client's accounts.
 
@@ -334,7 +347,8 @@ Important:
 - Compare creditor name, amount, transaction date, and description.
 - Confirm if the transaction is actually new funding before making a decision.
 
-### Section 14 — Creditor Tenure Rules {: #sec14}
+<a id="sec14"></a>
+### Section 14 — Creditor Tenure Rules
 
 Most creditors require **30 natural days** from the most recent funding date before enrollment. Some creditors require **45 natural days**.
 
@@ -345,7 +359,8 @@ Most creditors require **30 natural days** from the most recent funding date bef
 
 > ⚠️ All days are **natural days**, including weekends. The **exception tenure requires UW Management approval**, or an existing UW-approved process for that specific creditor — it is not a default option.
 
-### Section 15 — Creditor Close to Tenure {: #sec15}
+<a id="sec15"></a>
+### Section 15 — Creditor Close to Tenure
 
 If the creditor is close to meeting the required tenure, do not automatically disqualify the file.
 
@@ -366,7 +381,8 @@ If the creditor is close to meeting the required tenure, do not automatically di
 <em>"Chirp review completed. [Creditor Name] was funded on [Funding Date]. Please work this creditor last. File can continue after [Eligible Date]."</em>
 </details>
 
-### Section 16 — Recent Funding Found {: #sec16}
+<a id="sec16"></a>
+### Section 16 — Recent Funding Found
 
 If recent funding is found, first confirm if the file has one creditor or multiple creditors.
 
@@ -422,7 +438,8 @@ Please contact the client and ask them to sign the updated contract once receive
 Thank you.
 </details>
 
-### Section 17 — If Debt Drops Below the Minimum {: #sec17}
+<a id="sec17"></a>
+### Section 17 — If Debt Drops Below the Minimum
 
 If removing a creditor causes the remaining enrolled debt to fall below the minimum program requirement, the file cannot continue.
 
@@ -445,7 +462,8 @@ The note must include:
 </ul>
 </details>
 
-### Section 18 — Same Creditor With Multiple Positions {: #sec18}
+<a id="sec18"></a>
+### Section 18 — Same Creditor With Multiple Positions
 
 If the same creditor has more than one position enrolled and Chirp shows one recent deposit, do not remove all positions automatically. Ask Sales which position the deposit belongs to.
 
@@ -465,7 +483,8 @@ Thank you.
 
 ## 💳 Transacciones, Pagos y Bank Refresh
 
-### Section 19 — Card Payment and ACH Handling {: #sec19}
+<a id="sec19"></a>
+### Section 19 — Card Payment and ACH Handling
 
 <details>
 <summary>💳 If Card Payment Was Already Processed</summary>
@@ -493,7 +512,8 @@ Cutoff time: <strong>1:00 PM EST</strong>.
 If the file is already too advanced in the process, contact UW Management before moving the status.
 </details>
 
-### Section 20 — Files That Need to Be Placed on Hold {: #sec20}
+<a id="sec20"></a>
+### Section 20 — Files That Need to Be Placed on Hold
 
 If the file cannot continue at that moment, especially when payments need to be paused, update Salesforce to:
 
@@ -546,7 +566,8 @@ Payments can be resumed on <strong>[date]</strong>.
 Thank you.
 </details>
 
-### Section 21 — Creditor Name Differences {: #sec21}
+<a id="sec21"></a>
+### Section 21 — Creditor Name Differences
 
 Sometimes the creditor name in Chirp does not match exactly with Salesforce. This can happen because Chirp or the bank transaction may show a DBA name, servicing name, funding descriptor, shortened name, or related entity name.
 
@@ -572,7 +593,8 @@ Do not treat this as an issue automatically. Validate if both names belong to th
 
 If both names refer to the same creditor, the file can continue with clear notes. If the legal name in the contract needs to be updated, send an updated contract and notify Sales.
 
-### Section 22 — Transactions That May Not Be New Funding {: #sec22}
+<a id="sec22"></a>
+### Section 22 — Transactions That May Not Be New Funding
 
 Not every deposit is new funding. Some transactions may be:
 
@@ -587,13 +609,15 @@ Before treating a deposit as new funding, review: transaction description, amoun
 
 If the amount is very small compared to the enrolled debt, review carefully before making a decision. If unsure, escalate to UW Management.
 
-### Section 23 — When the Lender Does Not Show in Transactions {: #sec23}
+<a id="sec23"></a>
+### Section 23 — When the Lender Does Not Show in Transactions
 
 The enrolled lender does not always need to appear in Chirp transactions. This does not automatically mean there is an issue.
 
 If the banking information matches and no recent funding is found, the file can continue.
 
-### Section 24 — Bank Refresh for Returned Payments {: #sec24}
+<a id="sec24"></a>
+### Section 24 — Bank Refresh for Returned Payments
 
 Bank Refresh is a separate workflow used when UW receives an email with the subject:
 
@@ -662,7 +686,8 @@ Thank you.
 
 ## 🗒️ Documentación y Checklist Final
 
-### Section 25 — Salesforce Notes {: #sec25}
+<a id="sec25"></a>
+### Section 25 — Salesforce Notes
 
 Every Chirp review must be documented in Salesforce. At minimum, the note should include:
 
@@ -727,7 +752,8 @@ Every Chirp review must be documented in Salesforce. At minimum, the note should
 <em>"Returned payment review attempted on [date/time]. No completed Chirp found for this client. CS notified that balance cannot be confirmed."</em>
 </details>
 
-### Section 26 — Final Checklist {: #sec26}
+<a id="sec26"></a>
+### Section 26 — Final Checklist
 
 Before closing the Chirp review, confirm:
 
