@@ -57,6 +57,9 @@ Referenced from Quote Request and Contract Request workflows — not a standalon
 How to process a Move Payment Request on an enrolled BDS opportunity.
 Includes the one-move-only rule, previous payment status checks, and the 1 PM EST same-day cutoff.
 
+### [Chirp Review Process](./chirp-review)
+How to verify banking information, account ownership, creditor activity, and recent funding using Chirp, including creditor tenure rules, recent funding scenarios, files that need payments paused, and Bank Refresh for returned payments.
+
 ---
 
 ## 📌 Portfolio Scope
