@@ -82,3 +82,74 @@
   margin-bottom: 20px !important;
   padding: 10px 16px;
 }
+
+/* ===== SOP search box (site-wide, added in _layouts/default.html) ===== */
+.sop-search {
+  position: relative;
+  max-width: 480px;
+  margin: 1rem auto 0;
+}
+
+.sop-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem 0.9rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.sop-search-input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+.sop-search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 50;
+  text-align: left;
+}
+
+.sop-search-result {
+  display: block;
+  padding: 0.6rem 0.9rem;
+  text-decoration: none;
+  color: #1a1a1a;
+  border-bottom: 1px solid #eee;
+}
+
+.sop-search-result:last-child {
+  border-bottom: none;
+}
+
+.sop-search-result:hover,
+.sop-search-result:focus {
+  background: #f2f8f7;
+}
+
+.sop-search-result-title {
+  font-weight: 700;
+  color: #157878;
+  font-size: 0.95rem;
+}
+
+.sop-search-result-snippet {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 2px;
+}
+
+.sop-search-empty {
+  padding: 0.6rem 0.9rem;
+  color: #777;
+  font-size: 0.9rem;
+}
