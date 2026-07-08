@@ -1,158 +1,50 @@
-/*
- * Site-wide search for the BDS Portfolio SOP site.
- * Loads /search.json once, expands the typed query using the domain
- * synonym map in search-synonyms.js, scores every entry, and renders
- * clickable results (title + snippet) in a dropdown under the search box.
- *
- * Depends on: search-synonyms.js (window.SOP_SYNONYMS) loaded before this file.
- * Expects markup (added in _layouts/default.html):
- *   <input id="sop-search-input" data-baseurl="{{ site.baseurl }}">
- *   <div id="sop-search-results"></div>
- */
-(function () {
-  var indexPromise = null;
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
 
-  function loadIndex(baseurl) {
-    if (indexPromise) return indexPromise;
-    indexPromise = fetch(baseurl + '/search.json')
-      .then(function (res) {
-        if (!res.ok) throw new Error('search.json responded ' + res.status);
-        return res.json();
-      })
-      .catch(function (err) {
-        console.error('SOP search: could not load search.json', err);
-        return [];
-      });
-    return indexPromise;
-  }
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-  function expandQuery(query) {
-    var q = query.toLowerCase().trim();
-    var terms = new Set();
-    if (!q) return terms;
-    terms.add(q);
-    var dict = window.SOP_SYNONYMS || {};
-    Object.keys(dict).forEach(function (key) {
-      var group = [key].concat(dict[key]);
-      var matched = group.some(function (term) {
-        return q.indexOf(term) !== -1 || term.indexOf(q) !== -1;
-      });
-      if (matched) {
-        group.forEach(function (term) { terms.add(term); });
-      }
-    });
-    return terms;
-  }
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
-  function scoreEntry(entry, terms) {
-    var score = 0;
-    var title = (entry.title || '').toLowerCase();
-    var content = (entry.content || '').toLowerCase();
-    terms.forEach(function (term) {
-      if (!term) return;
-      if (title.indexOf(term) !== -1) score += 5;
-      if (content.indexOf(term) !== -1) score += 1;
-    });
-    return score;
-  }
+      <div class="sop-search" role="search">
+        <input type="text" id="sop-search-input" class="sop-search-input" data-baseurl="{{ site.baseurl }}" placeholder="🔍 Search all SOPs (e.g. paynow, tenure, BCC, mismatch)...">
+        <div id="sop-search-results" class="sop-search-results" hidden></div>
+      </div>
 
-  function snippet(content, terms) {
-    var text = content || '';
-    var lower = text.toLowerCase();
-    var idx = -1;
-    terms.forEach(function (term) {
-      if (idx !== -1 || !term) return;
-      var found = lower.indexOf(term);
-      if (found !== -1) idx = found;
-    });
-    if (idx === -1) idx = 0;
-    var start = Math.max(0, idx - 40);
-    var end = Math.min(text.length, idx + 100);
-    var s = text.slice(start, end).trim();
-    return (start > 0 ? '…' : '') + s + (end < text.length ? '…' : '');
-  }
+      {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+      {% endif %}
+      {% if site.show_downloads %}
+        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+      {% endif %}
+    </header>
 
-  function render(container, results, terms) {
-    container.innerHTML = '';
-    if (!results.length) {
-      var empty = document.createElement('div');
-      empty.className = 'sop-search-empty';
-      empty.textContent = 'No matches in this SOP.';
-      container.appendChild(empty);
-      container.hidden = false;
-      return;
-    }
-    results.forEach(function (entry) {
-      var a = document.createElement('a');
-      a.className = 'sop-search-result';
-      a.href = entry.url;
+    <main id="content" class="main-content" role="main">
+      {{ content }}
 
-      var titleEl = document.createElement('div');
-      titleEl.className = 'sop-search-result-title';
-      titleEl.textContent = entry.title;
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        {% endif %}
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
 
-      var snippetEl = document.createElement('div');
-      snippetEl.className = 'sop-search-result-snippet';
-      snippetEl.textContent = snippet(entry.content, terms);
-
-      a.appendChild(titleEl);
-      a.appendChild(snippetEl);
-      container.appendChild(a);
-    });
-    container.hidden = false;
-  }
-
-  function init() {
-    var input = document.getElementById('sop-search-input');
-    var results = document.getElementById('sop-search-results');
-    if (!input || !results) return;
-
-    var baseurl = input.getAttribute('data-baseurl') || '';
-    var debounceTimer = null;
-
-    input.addEventListener('input', function () {
-      var query = input.value;
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(function () {
-        if (!query || query.trim().length < 2) {
-          results.hidden = true;
-          results.innerHTML = '';
-          return;
-        }
-        loadIndex(baseurl).then(function (index) {
-          var terms = expandQuery(query);
-          var scored = index
-            .map(function (entry) { return { entry: entry, score: scoreEntry(entry, terms) }; })
-            .filter(function (r) { return r.score > 0; });
-          scored.sort(function (a, b) { return b.score - a.score; });
-          render(results, scored.slice(0, 15).map(function (r) { return r.entry; }), terms);
-        });
-      }, 150);
-    });
-
-    input.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        results.hidden = true;
-        input.blur();
-      }
-    });
-
-    document.addEventListener('click', function (e) {
-      if (e.target !== input && !results.contains(e.target)) {
-        results.hidden = true;
-      }
-    });
-
-    input.addEventListener('focus', function () {
-      if (input.value.trim().length >= 2 && results.innerHTML) {
-        results.hidden = false;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-})();
+    <script src="{{ '/assets/js/search-synonyms.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+  </body>
+</html>
