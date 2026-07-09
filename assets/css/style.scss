@@ -159,3 +159,46 @@
   color: #777;
   font-size: 0.9rem;
 }
+
+/* ===== Copy buttons (added by assets/js/copy-buttons.js) ===== */
+.page-content pre.sop-copy-target,
+.page-content blockquote.sop-copy-target {
+  position: relative;
+  padding-top: 36px !important;
+}
+
+.sop-copy-btn {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  z-index: 2;
+  display: inline-block;
+  white-space: normal;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2eb85c;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sop-copy-btn:hover {
+  background-color: #25994a;
+}
+
+.sop-copy-btn:disabled {
+  cursor: default;
+  opacity: 0.9;
+}
+
+/* Inline copy button next to the 🗒️ <em> note examples in chirp-review.md */
+.sop-copy-btn-inline {
+  position: static;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
