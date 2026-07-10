@@ -24,54 +24,61 @@ title: DAG Program Cost & CC Payment Calculator
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   .calc-wrap { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem; font-family: system-ui, sans-serif; }
-  .calc-header { background: #1a3c2e; border-radius: 12px 12px 0 0; padding: 1.25rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+  .calc-header { background: #14264d; border-radius: 12px 12px 0 0; padding: 1.25rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
   .calc-header-title { color: #ffffff; font-size: 18px; font-weight: 600; }
-  .calc-header-sub { color: #7ec8a0; font-size: 13px; margin-top: 2px; }
-  .calc-body { background: #ffffff; border: 1px solid #d4e8dc; border-top: none; border-radius: 0 0 12px 12px; padding: 1.75rem; }
+  .calc-header-sub { color: #a8c2ea; font-size: 13px; margin-top: 2px; }
+  .calc-body { background: #ffffff; border: 1px solid #c7d7ee; border-top: none; border-radius: 0 0 12px 12px; padding: 1.75rem; }
 
   /* Top row: input + program cost side by side */
   .top-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: end; margin-bottom: 1.5rem; }
-  .field-label { font-size: 13px; font-weight: 600; color: #1a3c2e; margin-bottom: 6px; display: block; }
-  .field-input { padding: 13px 16px; border: 1.5px solid #b8d9c5; border-radius: 8px; background: #f5fbf7; color: #1a3c2e; font-size: 20px; width: 100%; transition: border-color 0.2s; }
-  .field-input:focus { outline: none; border-color: #2eb85c; background: #fff; }
-  .field-input::placeholder { color: #a0b8aa; font-size: 16px; }
+  .field-label { font-size: 13px; font-weight: 600; color: #14264d; margin-bottom: 6px; display: block; }
+  .field-input { padding: 13px 16px; border: 1.5px solid #b3c6e6; border-radius: 8px; background: #eef3fb; color: #14264d; font-size: 20px; width: 100%; transition: border-color 0.2s; }
+  .field-input:focus { outline: none; border-color: #2c5aa0; background: #fff; }
+  .field-input::placeholder { color: #8fa3c9; font-size: 16px; }
 
-  .result-box { background: #1a3c2e; border-radius: 8px; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center; height: 100%; }
-  .result-label { font-size: 13px; color: #7ec8a0; font-weight: 500; }
+  .result-box { background: #14264d; border-radius: 8px; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center; height: 100%; }
+  .result-label { font-size: 13px; color: #a8c2ea; font-weight: 500; }
   .result-value { font-size: 32px; font-weight: 700; color: #ffffff; }
   .result-copy { display: flex; align-items: center; gap: 10px; }
-  .copy-btn-light { background: none; border: none; cursor: pointer; padding: 2px 6px; border-radius: 4px; font-size: 14px; color: #7ec8a0; opacity: 0.7; transition: opacity 0.15s; }
+  .copy-btn-light { background: none; border: none; cursor: pointer; padding: 2px 6px; border-radius: 4px; font-size: 14px; color: #a8c2ea; opacity: 0.7; transition: opacity 0.15s; }
   .copy-btn-light:hover { opacity: 1; }
 
-  .divider { border: none; border-top: 1px solid #e8f3ec; margin: 1.25rem 0; }
-  .section-label { font-size: 11px; font-weight: 700; color: #4a7a5e; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; }
+  .divider { border: none; border-top: 1px solid #e4ecf9; margin: 1.25rem 0; }
+  .section-label { font-size: 11px; font-weight: 700; color: #46608f; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; }
+
+  /* Retainer fee box */
+  .retainer-box { background: #eef3fb; border: 1px solid #c7d7ee; border-radius: 8px; padding: 1rem 1.25rem; display: none; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+  .retainer-label { font-size: 13px; color: #46608f; font-weight: 500; }
+  .retainer-tier { font-size: 11px; color: #7488ad; margin-top: 2px; }
+  .retainer-value { font-size: 28px; font-weight: 700; color: #14264d; }
+  .retainer-copy { display: flex; align-items: center; gap: 10px; }
 
   /* CC grid: two columns */
   .cc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
   .cc-box { border-radius: 8px; padding: 1.25rem; }
-  .cc-box.max { background: #1a3c2e; }
-  .cc-box.min { background: #f5fbf7; border: 1px solid #d4e8dc; }
+  .cc-box.max { background: #14264d; }
+  .cc-box.min { background: #eef3fb; border: 1px solid #c7d7ee; }
   .cc-tag { display: inline-block; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 20px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
-  .cc-tag.max { background: #2eb85c; color: #ffffff; }
+  .cc-tag.max { background: #2c5aa0; color: #ffffff; }
   .cc-tag.min { background: #fff3cd; color: #856404; }
   .cc-main-label { font-size: 12px; margin-bottom: 4px; }
-  .cc-box.max .cc-main-label { color: #7ec8a0; }
-  .cc-box.min .cc-main-label { color: #4a7a5e; }
+  .cc-box.max .cc-main-label { color: #a8c2ea; }
+  .cc-box.min .cc-main-label { color: #46608f; }
   .cc-amount { font-size: 36px; font-weight: 700; margin-bottom: 12px; }
   .cc-box.max .cc-amount { color: #ffffff; }
-  .cc-box.min .cc-amount { color: #1a3c2e; }
+  .cc-box.min .cc-amount { color: #14264d; }
   .cc-amount-row { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
   .cc-row { display: flex; justify-content: space-between; align-items: center; font-size: 13px; padding: 7px 0; border-top: 1px solid; gap: 8px; }
-  .cc-box.max .cc-row { color: #7ec8a0; border-color: #2a5a42; }
-  .cc-box.min .cc-row { color: #4a7a5e; border-color: #d4e8dc; }
+  .cc-box.max .cc-row { color: #a8c2ea; border-color: #24406e; }
+  .cc-box.min .cc-row { color: #46608f; border-color: #c7d7ee; }
   .cc-row-label { flex: 1; }
   .cc-row-val { display: flex; align-items: center; gap: 6px; white-space: nowrap; font-weight: 600; font-size: 15px; }
   .cc-box.max .cc-row-val { color: #ffffff; }
-  .cc-box.min .cc-row-val { color: #1a3c2e; }
+  .cc-box.min .cc-row-val { color: #14264d; }
   .copy-btn { background: none; border: none; cursor: pointer; padding: 2px 4px; border-radius: 4px; font-size: 12px; opacity: 0.6; transition: opacity 0.15s; }
   .copy-btn:hover { opacity: 1; }
-  .cc-box.max .copy-btn { color: #7ec8a0; }
-  .cc-box.min .copy-btn { color: #4a7a5e; }
+  .cc-box.max .copy-btn { color: #a8c2ea; }
+  .cc-box.min .copy-btn { color: #46608f; }
   .note-box { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 0.75rem 1rem; font-size: 13px; color: #7a5800; margin-top: 1rem; }
 </style>
 
@@ -97,6 +104,18 @@ title: DAG Program Cost & CC Payment Calculator
           <span class="result-value" id="program-cost">$0.00</span>
           <button class="copy-btn-light" onclick="copyVal('program-cost')" title="Copy">⎘</button>
         </div>
+      </div>
+    </div>
+
+    <!-- Retainer Fee box: hidden until a debt amount is entered -->
+    <div class="retainer-box" id="retainer-box">
+      <div>
+        <div class="retainer-label">Retainer Fee</div>
+        <div class="retainer-tier" id="retainer-tier">—</div>
+      </div>
+      <div class="retainer-copy">
+        <span class="retainer-value" id="retainer-fee">$0.00</span>
+        <button class="copy-btn-light" style="color:#46608f;" onclick="copyVal('retainer-fee')" title="Copy">⎘</button>
       </div>
     </div>
 
@@ -171,6 +190,13 @@ function copyVal(id) {
   });
 }
 
+function getRetainerFee(enrolled) {
+  if (enrolled <= 30000) return { fee: 1249.00, tier: 'Under $30,000' };
+  if (enrolled <= 50000) return { fee: 1499.00, tier: '$30,001 – $50,000' };
+  if (enrolled <= 75000) return { fee: 1749.00, tier: '$50,001 – $75,000' };
+  return { fee: 1999.00, tier: '$75,001 and Above' };
+}
+
 function calculate() {
   const enrolled = parseFloat(document.getElementById('enrolled').value) || 0;
 
@@ -198,6 +224,17 @@ function calculate() {
   document.getElementById('min-fee').textContent = fmt(minFee);
   document.getElementById('min-processor').textContent = fmt(minProcessor);
   document.getElementById('min-total').textContent = fmt(minTotal);
+
+  // Retainer Fee — only shown once a debt amount is entered
+  const retainerBox = document.getElementById('retainer-box');
+  if (enrolled > 0) {
+    const r = getRetainerFee(enrolled);
+    document.getElementById('retainer-fee').textContent = fmt(r.fee);
+    document.getElementById('retainer-tier').textContent = 'Tier: ' + r.tier;
+    retainerBox.style.display = 'flex';
+  } else {
+    retainerBox.style.display = 'none';
+  }
 }
 </script>
 
