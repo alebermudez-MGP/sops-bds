@@ -202,3 +202,11 @@ blockquote.sop-copy-target {
   margin-left: 10px;
   vertical-align: middle;
 }
+
+/* Copy button for email/message templates (✉️ Sales Template / CS Template
+   blocks and the Scenario A/B templates in chirp-review.md) */
+.sop-copy-btn-block {
+  position: static;
+  display: inline-block;
+  margin: 8px 0 12px;
+}
