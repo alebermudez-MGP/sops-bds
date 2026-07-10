@@ -12,6 +12,7 @@ title: DAG 05 — Quick Reference
 <a href="./dag-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
 <a href="./dag-schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
 <a href="./dag-paynow-link">PayNow Link</a> &nbsp;|&nbsp;
+<a href="./dag-calculator">Calculator</a> &nbsp;|&nbsp;
 <a href="./chirp-review">Chirp Review</a>
 </p>
 
@@ -241,6 +242,8 @@ The closest available alternative is a one-month term structured into two bi-wee
 <li>If the Card Payment calculated using the Default Card Fee is greater than the first scheduled ACH payment, use the <strong>minimum Card Payment (1% of the enrolled debt)</strong> instead.</li>
 <li>This exception applies only when the calculated Card Payment exceeds the first ACH payment — the goal is to ensure the Card Payment never exceeds the first scheduled ACH.</li>
 </ul>
+🧮 Use the <a href="./dag-calculator">DAG Program Cost & CC Payment Calculator</a> to calculate these amounts automatically.
+<br><br>
 💳 See <a href="./dag-paynow-link">PayNow Link</a> for how to generate the payment link in TRIFI.
 </details>
 
@@ -293,5 +296,6 @@ Do not make assumptions — when in doubt, escalate.
 <a href="./dag-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
 <a href="./dag-schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
 <a href="./dag-paynow-link">PayNow Link</a> &nbsp;|&nbsp;
+<a href="./dag-calculator">Calculator</a> &nbsp;|&nbsp;
 <a href="./chirp-review">Chirp Review</a>
 </p>
