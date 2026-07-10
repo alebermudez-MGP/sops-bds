@@ -104,7 +104,7 @@
     overlay.innerHTML =
       '<div id="bds-lock-box">' +
       '<h2>🔒 Acceso Restringido</h2>' +
-      '<p>SOP BDS Portfolio Underwriting<br>Ingresa el código de acceso</p>' +
+      '<p>SOP BDS &amp; DAG Portfolio Underwriting<br>Ingresa el código de acceso</p>' +
       '<input type="password" id="bds-lock-input" maxlength="10" inputmode="numeric" placeholder="••••" autocomplete="off">' +
       '<button id="bds-lock-btn">Ingresar</button>' +
       '<div id="bds-lock-error">Código incorrecto. Intenta de nuevo.</div>' +
@@ -136,17 +136,3 @@
       input.focus();
     }, 100);
   }
-
-  function init() {
-    if (!checkAccess()) {
-      showLock();
-    }
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
-})();
-</script>
