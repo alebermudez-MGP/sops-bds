@@ -12,7 +12,7 @@ title: DAG 01 — Quote Request
 <a href="./dag-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
 <a href="./dag-schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
 <a href="./dag-paynow-link">PayNow Link</a> &nbsp;|&nbsp;
-<a href="./dag-calculator">Calculator</a>
+<a href="https://alebermudez-mgp.github.io/sops-bds/dag-calculator.html">Calculator</a>
 </p>
 
 ---
@@ -479,7 +479,7 @@ Include:
 <summary>💳 Credit Card payment rules</summary>
 <br>
 <ol>
-<li>Open the <a href="./dag-calculator">DAG Program Cost & CC Payment Calculator</a> and enter the enrolled debt amount.</li>
+<li>Open the <a href="https://alebermudez-mgp.github.io/sops-bds/dag-calculator.html">DAG Program Cost & CC Payment Calculator</a> and enter the enrolled debt amount.</li>
 <li>The calculator will show Max and Min CC amounts.</li>
 <li>Always use the <strong>Max</strong> amount.</li>
 <li>Use the <strong>Min</strong> only if Sales requests an exception and Management approves it.</li>
@@ -554,5 +554,5 @@ Enter the CC payment information under the <strong>Card Payment Info</strong> se
 <a href="./dag-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
 <a href="./dag-schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
 <a href="./dag-paynow-link">PayNow Link</a> &nbsp;|&nbsp;
-<a href="./dag-calculator">Calculator</a>
+<a href="https://alebermudez-mgp.github.io/sops-bds/dag-calculator.html">Calculator</a>
 </p>
