@@ -22,7 +22,7 @@ title: DAG Schedule Transactions
 
 💡 Always have both tools open before starting this process:
 <ul>
-<li>🧮 <a href="./dag-calculator">DAG Calculator (Jan. 2026)</a></li>
+<li>🧮 <a href="https://alebermudez-mgp.github.io/sops-bds/dag-calculator.html">DAG Calculator</a> — Program Cost &amp; CC Payment</li>
 <li>📊 <a href="https://docs.google.com/spreadsheets/d/11NV7r-1ElP4VAdZkbB66d7KYGjql22-x21LE7FAZz1E/edit?pli=1&gid=340464856#gid=340464856">Underwriting Pricing Sheet</a> — Plan values by state</li>
 </ul>
 
