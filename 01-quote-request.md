@@ -224,8 +224,9 @@ Fill in the following fields:
 <li>No need to ask Sales who the assigned agent is.</li>
 <li>The Sales Agent can be changed as long as the Sales Lead remains the same.</li>
 <li>If the Sales Lead is different from what is expected, contact UW Management before proceeding.</li>
-<li>Any request under Sales Lead <strong>Vic Carmine</strong> must be processed under BDS.</li>
+<li>Any request under Sales Lead <strong>Vic Carmine</strong> must be processed under BDS by default.</li>
 </ul>
+⚠️ <strong>Exception:</strong> If the company specifically requires it, a Vic Carmine file may be processed under DAG instead — but only as a documented exception approved by Management. Do not move a Vic Carmine file to DAG on your own judgment.
 </details>
 
 <details>
@@ -295,14 +296,14 @@ If documentation cannot be obtained → escalate to Management via Webex.
 <details>
 <summary>⏳ Enrollment waiting periods</summary>
 <br>
-💡 Note these now — they apply at contract stage.
+💡 Note these now — they apply at contract stage. See <a href="./05-quick-reference">05 — Quick Reference</a> for the full breakdown, including the 25-day and 40-day exceptions.
 <br><br>
 <table>
 <tr><th>Creditor</th><th>Minimum wait</th></tr>
-<tr><td>Standard</td><td>30 days from agreement date. A 25-day exception exists — confirm with Management before applying.</td></tr>
-<tr><td>Fora &amp; McKenzie</td><td>45 days. If funded between 30–45 days, creditor may only be enrolled with at least two additional creditors. A 25-day exception exists — confirm with Management before applying.</td></tr>
-<tr><td>Everest / Vader</td><td>45 days after funding. If funded between 30–45 days, creditor may only be enrolled with at least two additional creditors. A 25-day exception exists — confirm with Management before applying.</td></tr>
-<tr><td>Byzfunder NY LLC</td><td>30 days — note the approximate funded date in the opportunity.</td></tr>
+<tr><td>Standard</td><td>30 days from agreement date. A 25-day exception exists (any portfolio) — confirm with Management before applying.</td></tr>
+<tr><td>Fora &amp; McKenzie</td><td>45 days. If bundled with at least two additional creditors, a 25-day exception may apply. If it comes alone, the exception is 40 days instead. Confirm with Management before applying.</td></tr>
+<tr><td>Everest / Vader</td><td>45 days after funding. Same bundled/alone exception rule as Fora &amp; McKenzie (25 days bundled / 40 days alone). Confirm with Management before applying.</td></tr>
+<tr><td>Byzfunder NY LLC</td><td>30 days for BDS (DAG uses 45 days) — note the approximate funded date in the opportunity.</td></tr>
 <tr><td>Blacklisted creditors</td><td>❌ Never eligible.</td></tr>
 </table>
 </details>
