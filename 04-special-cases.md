@@ -17,7 +17,7 @@ title: 04 — Special Cases
 
 # ⚠️ 04 — Special Cases
 
-Reference this page when a file involves Concurrent accounts, Delinquency, Collection Review, Portfolio switches, Re-enrollment, or Bank Account Updates.
+Reference this page when a file involves Concurrent accounts, Delinquency, Collection Review, Portfolio switches, Re-enrollment, Bank Account Updates, or Puerto Rico files.
 
 ---
 
@@ -251,6 +251,42 @@ For the specific scenario of a <strong>brand new account</strong> where the merc
 <li>An official <strong>Bank Letter</strong></li>
 </ul>
 This stricter requirement for new accounts is necessary to ensure the provided information is valid before continuing with the process.
+</details>
+
+---
+
+## Section 7 — Puerto Rico Files
+
+> 📌 This section applies to **both portfolios (BDS and DAG)**.
+
+<details>
+<summary>🇵🇷 Handling files where Puerto Rico is listed as the state</summary>
+<br>
+When working on files where <strong>Puerto Rico is listed as the state</strong>, follow these steps:
+<ul>
+<li>We <strong>can send the Quote</strong> as usual — no restriction at the quote stage.</li>
+<li><strong>Before moving forward with the Contract</strong>, we must request either a <strong>Voided Check</strong> or a <strong>Bank Statement</strong>.</li>
+<li>The financial institution must be <strong>verified</strong> to confirm we can process payments from that bank.</li>
+<li>Consult with <strong>Upper Management</strong> regarding whether we can proceed with that financial institution.</li>
+</ul>
+</details>
+
+<details>
+<summary>📐 Plan guidelines for Puerto Rico</summary>
+<br>
+<ul>
+<li>Use the <strong>Plan Standard</strong> as if it were a regular state.</li>
+<li>Apply the <strong>&lt;15000 plan</strong> if the balance is $15,000 or lower.</li>
+</ul>
+</details>
+
+<details>
+<summary>📧 When sending the Quote to Sales</summary>
+<br>
+<ul>
+<li>Inform the <strong>Sales Agent</strong> that a Voided Check or Bank Statement is required before we can move forward with the contract.</li>
+<li><strong>Leave an Alert in the file</strong> noting that a Voided Check or Bank Statement is required to proceed.</li>
+</ul>
 </details>
 
 ---
