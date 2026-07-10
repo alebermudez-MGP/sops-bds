@@ -110,8 +110,13 @@ Each opportunity must contain only one type of debt.
 The template must include Portfolio, Score, and Risk Classification.
 <ul>
 <li>If Score or Portfolio is missing → return to Sales immediately and request the missing information.</li>
-<li>If a portfolio is referenced but not specified → ask Sales: <em>"Which portfolio did the Risk Score calculator assign?"</em></li>
+<li>If a portfolio is referenced but not specified → ask Sales the question below.</li>
 </ul>
+
+```
+Which portfolio did the Risk Score calculator assign?
+```
+
 </details>
 
 ---
@@ -134,7 +139,11 @@ Search for the merchant using **all** of the following before creating anything:
 <li><strong>Account is in delinquency status</strong> → review notes and see <a href="./04-special-cases">04 — Special Cases</a> before proceeding.</li>
 <li><strong>Same contact info, different business name</strong> → do not stop the quote. Proceed and include the following note in your Quote Reply to the sales agent:</li>
 </ul>
-<blockquote><em>"Here's the Quote. Please be aware that we have an account under the same merchant's name, phone number, or email address. Please clarify before moving forward with the contract request."</em></blockquote>
+
+```
+Here's the Quote. Please be aware that we have an account under the same merchant's name, phone number, or email address. Please clarify before moving forward with the contract request.
+```
+
 </details>
 
 ---
@@ -327,7 +336,12 @@ Lendini and Quickfix are the same company. Their funding appears under the names
 </ul>
 <hr>
 <strong>Reverse Consolidation Companies</strong><br><br>
-Ask Sales: <em>"Are there additional creditors included in this reverse consolidation account?"</em>
+Ask Sales the question below:
+
+```
+Are there additional creditors included in this reverse consolidation account?
+```
+
 <ul>
 <li>If yes → include the reverse consolidation company name AND each individual creditor with their balance.</li>
 <li>If no → include only the reverse consolidation company name and total balance.</li>
@@ -338,7 +352,11 @@ Ask Sales: <em>"Are there additional creditors included in this reverse consolid
 <li>Enter the original lender's name in Salesforce.</li>
 <li>Add a NOTE and a NEXT STEP with the following text (do not alter the meaning):</li>
 </ul>
-<blockquote><em>"File is already with 3rd party collection agency so if it does progress through the process the Negotiators know that there is no need to engage communications with the lender; negotiations will be handled directly with the collection agency."</em></blockquote>
+
+```
+File is already with 3rd party collection agency so if it does progress through the process the Negotiators know that there is no need to engage communications with the lender; negotiations will be handled directly with the collection agency.
+```
+
 <hr>
 <strong>Creditor not on the Gsheet</strong>
 <ul>
