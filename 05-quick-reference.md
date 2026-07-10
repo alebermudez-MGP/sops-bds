@@ -11,7 +11,7 @@ title: 05 — Quick Reference
 <a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
 <a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
 <a href="./schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
-<a href="./bds-calculator">Calculator</a>
+<a href="https://alebermudez-mgp.github.io/sops-bds/bds-calculator.html">Calculator</a>
 </p>
 
 ---
@@ -191,7 +191,7 @@ The closest available alternative is a one-month term structured into two bi-wee
 <li>If the Card Payment calculated using the Default Card Fee is greater than the first scheduled ACH payment, use the <strong>minimum Card Payment (1% of the enrolled debt)</strong> instead.</li>
 <li>This exception applies only when the calculated Card Payment exceeds the first ACH payment — the goal is to ensure the Card Payment never exceeds the first scheduled ACH.</li>
 </ul>
-🧮 Use the <a href="./bds-calculator">BDS Program Cost & CC Payment Calculator</a> to calculate these amounts automatically.
+🧮 Use the <a href="https://alebermudez-mgp.github.io/sops-bds/bds-calculator.html">BDS Program Cost & CC Payment Calculator</a> to calculate these amounts automatically.
 </details>
 
 <details>
@@ -214,5 +214,5 @@ The closest available alternative is a one-month term structured into two bi-wee
 <a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
 <a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
 <a href="./schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
-<a href="./bds-calculator">Calculator</a>
+<a href="https://alebermudez-mgp.github.io/sops-bds/bds-calculator.html">Calculator</a>
 </p>
