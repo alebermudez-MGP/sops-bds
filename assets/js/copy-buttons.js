@@ -12,6 +12,12 @@
  *   3. <details> whose <summary> contains 🗒️ and wraps an <em> template
  *      (the "Note Example" / Section 25 Salesforce Notes blocks in
  *      chirp-review.md).
+ *   4. <details> containing a "Hi Sales Team," / "Hi CS Team," email
+ *      template — whether the whole <details> is the template (✉️ summary)
+ *      or the template follows surrounding instructions after an inline
+ *      "___ Template:" label (chirp-review.md Section 16 scenarios).
+ *   5. Inline <code> spans with an exact value to paste (SKU/Descripcion
+ *      values in paynow-link.md, email subject lines in chirp-review.md).
  *
  * Buttons are inserted as children of the existing block (not new sibling
  * wrappers), so the adjacent-sibling spacing rules in style.scss
@@ -66,7 +72,7 @@
     clone.querySelectorAll('br').forEach(function (br) {
       br.replaceWith('\n');
     });
-    return clone.textContent;
+    return clone.textContent.replace(/\n{3,}/g, '\n\n');
   }
 
   function makeButton(getText, extraClass) {
@@ -113,6 +119,42 @@
       var text = blockText(em).replace(/^["“]|["”]$/g, '').trim();
       var btn = makeButton(function () { return text; }, 'sop-copy-btn-inline');
       em.parentNode.insertBefore(btn, em.nextSibling);
+    });
+
+    // 4) Email/message templates inside <details> — anything starting with a
+    //    "Hi Sales Team," / "Hi CS Team," greeting.
+    scope.querySelectorAll('details').forEach(function (det) {
+      if (det.classList.contains('sop-copy-target-tpl')) return;
+      var summary = det.querySelector('summary');
+      var clone = det.cloneNode(true);
+      var cloneSummary = clone.querySelector('summary');
+      if (cloneSummary) cloneSummary.remove();
+      var bodyText = blockText(clone);
+      var match = /Hi (Sales|CS) Team,/.exec(bodyText);
+      if (!match) return;
+      var text = bodyText.slice(match.index).trim();
+      det.classList.add('sop-copy-target-tpl');
+
+      var label = null;
+      det.querySelectorAll('strong').forEach(function (s) {
+        if (!label && /template:?$/i.test(s.textContent.trim())) label = s;
+      });
+      var anchor = label || summary;
+      var btn2 = makeButton(function () { return text; }, 'sop-copy-btn-block');
+      anchor.parentNode.insertBefore(btn2, anchor.nextSibling);
+    });
+
+    // 5) Inline <code> spans with an exact value to paste (SKU/Descripcion
+    //    values, email subject lines, etc.) — skip <code> inside <pre>,
+    //    already handled by #1.
+    scope.querySelectorAll('code').forEach(function (code) {
+      if (code.closest('pre')) return;
+      if (code.dataset.sopCopyDone) return;
+      var text = blockText(code).trim();
+      if (!text) return;
+      code.dataset.sopCopyDone = '1';
+      var btn3 = makeButton(function () { return text; }, 'sop-copy-btn-inline');
+      code.parentNode.insertBefore(btn3, code.nextSibling);
     });
   }
 
