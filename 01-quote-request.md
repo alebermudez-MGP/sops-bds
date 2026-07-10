@@ -10,7 +10,8 @@ title: 01 — Quote Request
 <a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
 <a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
 <a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a>
+<a href="./schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
+<a href="./bds-calculator">Calculator</a>
 </p>
 
 ---
@@ -465,7 +466,7 @@ Include:
 <summary>💳 Credit Card payment rules</summary>
 <br>
 <ol>
-<li>Open the new calculator and enter the enrolled debt amount.</li>
+<li>Open the <a href="./bds-calculator">BDS Program Cost & CC Payment Calculator</a> and enter the enrolled debt amount.</li>
 <li>The calculator will show Max and Min CC amounts.</li>
 <li>Always use the <strong>Max</strong> amount.</li>
 <li>Use the <strong>Min</strong> only if Sales requests an exception and Management approves it.</li>
@@ -534,5 +535,6 @@ Enter the CC payment information under the <strong>Card Payment Info</strong> se
 <a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
 <a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
 <a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a>
+<a href="./schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
+<a href="./bds-calculator">Calculator</a>
 </p>
