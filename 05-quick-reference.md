@@ -80,9 +80,19 @@ Before adding a creditor for enrollment, confirm the debt meets the required agi
 <tr><td>Standard rule</td><td>30 calendar days from the agreement date</td></tr>
 <tr><td>Fora &amp; McKenzie</td><td>45 calendar days</td></tr>
 <tr><td>Everest / Vader</td><td>45 days after funding</td></tr>
-<tr><td>Byzfunder NY LLC</td><td>30 days old for DAG — UW must note the opportunity with the approx. funded date</td></tr>
+<tr><td>Byzfunder NY LLC</td><td>30 days from funding (BDS) — UW must note the opportunity with the approx. funded date</td></tr>
 <tr><td>Blacklisted creditors</td><td>Remain ineligible regardless of timing</td></tr>
 </table>
+<br>
+⚠️ Byzfunder NY LLC uses a different minimum for DAG (45 days) — always confirm the applicable portfolio before applying this rule.
+<br><br>
+<strong>25-day exception — Standard creditors:</strong> A 25-day exception may apply to Standard creditors. This applies across any portfolio (BDS or DAG). Confirm with Management before applying.
+<br><br>
+<strong>Exception — Fora &amp; McKenzie / Everest &amp; Vader:</strong>
+<ul>
+<li>If the creditor is bundled together with at least two additional creditors on the same file → a <strong>25-day exception</strong> may apply (confirm with Management).</li>
+<li>If the creditor comes alone (the only creditor on the file) → the exception is <strong>40 days</strong> instead of 25.</li>
+</ul>
 </details>
 
 <details>
