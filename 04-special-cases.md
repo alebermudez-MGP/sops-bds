@@ -63,14 +63,16 @@ A Concurrent should only be created if the original account is already enrolled.
 </details>
 
 <details>
-<summary>↩️ 3. Recent Returns</summary>
+<summary>↩️ 3. Returned Status Files</summary>
 <br>
-<ul>
-<li>If there are recent returns, the file may need to be handled as a delinquency instead of a Concurrent.</li>
-<li>Review the file and notes thoroughly to confirm whether the return has been rescheduled.</li>
-<li>The merchant must address the return(s) or the account must show a confirmed reschedule before you proceed.</li>
-<li>If the above is met, you may continue with the Concurrent.</li>
-</ul>
+A <strong>"Returned"</strong> status indicates a recent returned payment where the customer has likely not yet brought their account current. These files are <strong>not considered delinquent</strong>, since the customer still has the opportunity to resolve the single returned payment. Our policy requires the customer to become current before we move forward with any additional requests.
+<br><br>
+If a Concurrent request is received for a file in "Returned" status, follow these steps:
+<ol>
+<li>Confirm with the Underwriting (UW) team whether the returned payment has been rescheduled.</li>
+<li>If the payment has been rescheduled, wait until it successfully clears before proceeding with the Concurrent request.</li>
+<li>Inform the Sales team that the customer must become current before the Concurrent process can continue.</li>
+</ol>
 </details>
 
 <details>
@@ -131,6 +133,8 @@ Example: If a merchant has Business #1 with one lender under BDS, and later enro
 <li>Canceled</li>
 <li>Collections Review</li>
 </ul>
+<br>
+💡 <strong>Returned</strong> is a distinct status from the categories above — see Section 1, item 3, for how to handle files in "Returned" status. A single returned payment does not make a file delinquent.
 </details>
 
 <details>
