@@ -51,6 +51,16 @@ Open the client record in Salesforce and compare **field by field**:
 | Bank (ACH) details | Voided check provided |
 
 <details>
+<summary>📝 Document Verification</summary>
+<br>
+Whenever we receive a copy of the contract — or any other document — review it thoroughly and extract all relevant information to keep our records accurate and up to date. This applies any time a document is received, not only at this step: Quote, Contract Request, or Enrollment.
+<br><br>
+As part of this review, the merchant's name in Salesforce must be updated to match the name shown on the contract. If a driver's license is also provided, use the name listed on the license as the reference.
+<br><br>
+📖 See <a href="./05-quick-reference#section-6--document-verification">05 — Quick Reference, Section 6</a> for the full document verification checklist (Creditor Contracts, Bank Statements).
+</details>
+
+<details>
 <summary>✍️ Signature rules — acceptable vs not acceptable</summary>
 <br>
 <strong>Acceptable:</strong>
@@ -186,7 +196,7 @@ After completing the enrollment steps for a BDS opportunity, this additional ste
 <li>Clients Name</li>
 <li>Biz Name</li>
 <li>Debt Amount</li>
-<li>Expected Earn Fee</li>
+<li>Expected Earn Fee — ⚠️ effective immediately, this value must be taken from the <strong>Estimated TOTAL Fee Amount At Time Of UW</strong> field in Salesforce (Underwriting section). Use this value consistently to maintain accuracy across records and reporting.</li>
 <li>Program Term</li>
 <li>Signed Date</li>
 <li>Enrollment Date</li>
@@ -298,6 +308,8 @@ Additionally, UW must:
 - Always BCC the sales agent on the Secure Payment Link email.
 - The Bulk Processor Update to **Actum** is mandatory for every BDS enrollment.
 - If SSN, DOB, EIN, ACH, or signature checks fail → escalate to Management before continuing.
+- Whenever a document is received (contract, bank statement, license), verify it and extract the relevant details, updating the merchant's name in Salesforce to match the contract if needed — see [05 — Quick Reference, Section 6](./05-quick-reference#section-6--document-verification).
+- The Expected Earn Fee entered on the BDS Enrollments 2026 Google Sheet must always come from the **Estimated Total Fee Amount at Time of UW** field.
 - Escalations: QA → **qa@businessdebtsolutions.com** · Management → **joshua.a@businessdebtsolutions.com**
 
 ---
@@ -307,6 +319,7 @@ Additionally, UW must:
 - [ ] DocuSign email confirmed and signed contract downloaded
 - [ ] Signed contract saved into the opportunity (Files tab)
 - [ ] Contract reviewed field-by-field against Salesforce (fees, FPD, dates, names)
+- [ ] Merchant name verified/updated to match the contract (or driver's license, if provided)
 - [ ] Signature verified as an acceptable DocuSign signature
 - [ ] SSN / EIN / DOB verified against the system
 - [ ] ACH details verified against the voided check
@@ -319,7 +332,7 @@ Additionally, UW must:
 - [ ] Bulk Processor Update completed — Actum, from payment 1
 - [ ] Manual consistency check done (processor, portfolio, transactions, fees)
 - [ ] Final save with notes
-- [ ] CS email received → row added to BDS Enrollments 2026 sheet
+- [ ] CS email received → row added to BDS Enrollments 2026 sheet (Expected Earn Fee = Estimated Total Fee Amount at Time of UW)
 - [ ] CS email moved to the Enrolled files label
 - [ ] Enrollment review notes added
 
