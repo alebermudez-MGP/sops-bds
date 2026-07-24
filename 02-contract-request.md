@@ -128,6 +128,16 @@ Any other documentation requires <strong>Sales Management approval</strong> docu
 <strong>Sole Proprietor exception</strong> — The owner's personal name may appear as the Name on Account. This is acceptable as long as you confirm the account is a business account via bank statement or bank letter. No name change is required in Salesforce.
 </details>
 
+<details>
+<summary>📝 1.5 — Document Verification</summary>
+<br>
+Whenever we receive a copy of the contract — or any other document — review it thoroughly (contracts, bank statements) and extract all relevant information to keep our records accurate and up to date. This applies any time a document is received, not only at this step: Quote, Contract Request, or Enrollment.
+<br><br>
+As part of this review, the merchant's name in Salesforce must be updated to match the name shown on the contract. If a driver's license is also provided, use the name listed on the license as the reference.
+<br><br>
+📖 See <a href="./05-quick-reference#section-6--document-verification">05 — Quick Reference, Section 6</a> for the full document verification checklist (Creditor Contracts, Bank Statements).
+</details>
+
 ---
 
 ## Step 2 — Find and convert the lead in Salesforce
@@ -437,6 +447,8 @@ To maintain accurate reporting, all files must follow this status path regardles
 
 > 🚫 **Two ACH forms:** When creating a BDS contract, there will always be two ACH forms that must be completed by the merchant — whether the opportunity has one owner or both an owner and co-owner.
 
+> 📝 **Document verification:** Whenever a contract or other document is received, verify it and extract the relevant details — update the merchant's name in Salesforce to match the contract (or driver's license, if provided) — see [05 — Quick Reference, Section 6](./05-quick-reference#section-6--document-verification).
+
 > 📨 **Documents from clients not yet enrolled, under Sales Lead Rose Walters:** CC teamnotification@businessdebtninjas.com on all documents sent to the client.
 
 > 📨 **Documents from enrolled clients (any sales lead):** Forward to clientsupport@businessdebtsolutions.com
@@ -449,6 +461,7 @@ To maintain accurate reporting, all files must follow this status path regardles
 - [ ] Lead verified in Salesforce — Lead Source, Sales Lead, Sales Agent, Score, Risk Classification, Payment Capacity, Portfolio all present
 - [ ] Quote previously sent to client is attached and matches Salesforce data
 - [ ] Valid banking documentation attached (voided check or approved alternative)
+- [ ] Merchant name verified/updated to match the contract (or driver's license, if provided)
 - [ ] Lead found and converted in Salesforce
 - [ ] Account complete (all fields, no special characters)
 - [ ] Contact complete (SSN, DOB, State confirmed)
