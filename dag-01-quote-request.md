@@ -310,6 +310,7 @@ For each creditor listed on the quote request template:
 <li>Once received → repeat 6A/6B with the confirmed name.</li>
 <li>If documentation cannot be obtained → escalate to Management.</li>
 </ul>
+📝 <strong>Document Verification:</strong> whenever any of these documents (contract, bank statement) are received — at this step or any other — review them thoroughly and extract the relevant information. As part of this review, update the merchant's name in Salesforce to match the contract (or driver's license, if provided). See <a href="./dag-05-quick-reference#section-8--document-verification">05 — Quick Reference, Section 8</a> for the full document verification checklist.
 </details>
 
 <details>
@@ -510,6 +511,8 @@ Enter the CC payment information under the <strong>Card Payment Info</strong> se
 > 🚫 **Special characters:** Never use accented characters or tildes in any Salesforce field.
 
 > 🚫 **Lumpsum payments:** Not available. The closest alternative is a one-month term with two bi-weekly payments.
+
+> 📝 **Document verification:** Any time a document is received (contract, bank statement, license), review it and extract the relevant details — update the merchant's name in Salesforce to match if needed — see [05 — Quick Reference, Section 8](./dag-05-quick-reference#section-8--document-verification).
 
 > 💰 **Deals under $5,000 (single creditor, Funding Metrics/Lendini/QuickFix Micro Advance):** quote goes directly to the sales agent. Minimum enrolled debt lowered to $2,500. Keep terms within 4–5 months; up to 7 months with Management approval.
 
