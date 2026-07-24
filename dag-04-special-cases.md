@@ -4,7 +4,8 @@ title: DAG 04 — Special Cases
 ---
 
 <p>
-🏠 <a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
+🏠 <a href="https://alebermudez-mgp.github.io/sops-bds/">Home</a> &nbsp;|&nbsp;
+<a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
 <a href="./dag-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
 <a href="./dag-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
 <a href="./dag-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
@@ -297,7 +298,8 @@ DAG does not have a Move Payment Request process. If a request to move a schedul
 ---
 
 <p>
-🏠 <a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
+🏠 <a href="https://alebermudez-mgp.github.io/sops-bds/">Home</a> &nbsp;|&nbsp;
+<a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
 <a href="./dag-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
 <a href="./dag-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
 <a href="./dag-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
