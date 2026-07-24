@@ -3,6 +3,20 @@ layout: default
 title: DAG Portfolio — SOPs
 ---
 
+<p>
+🏠 <a href="https://alebermudez-mgp.github.io/sops-bds/">Home</a> &nbsp;|&nbsp;
+<a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
+<a href="./dag-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./dag-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./dag-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./dag-04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./dag-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./dag-schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
+<a href="./dag-paynow-link">PayNow Link</a>
+</p>
+
+---
+
 # 📚 DAG Portfolio — Standard Operating Procedures
 This section contains the standard operating procedures for the DAG (Debtors Advocacy Group) portfolio underwriting team.
 
@@ -76,3 +90,17 @@ Only **Merchant Cash Advances (MCA)** are processed through DAG. LOC from OnDeck
 Email **qa@dag-law.com** — CC **joshua.a@businessdebtsolutions.com** and **ale.b@businessdebtsolutions.com**
 
 Do not make assumptions — when in doubt, escalate.
+
+---
+
+<p>
+🏠 <a href="https://alebermudez-mgp.github.io/sops-bds/">Home</a> &nbsp;|&nbsp;
+<a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
+<a href="./dag-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./dag-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./dag-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./dag-04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./dag-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./dag-schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
+<a href="./dag-paynow-link">PayNow Link</a>
+</p>
