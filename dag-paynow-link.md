@@ -4,7 +4,8 @@ title: DAG PayNow Link
 ---
 
 <p>
-🏠 <a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
+🏠 <a href="https://alebermudez-mgp.github.io/sops-bds/">Home</a> &nbsp;|&nbsp;
+<a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
 <a href="./dag-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
 <a href="./dag-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
 <a href="./dag-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
@@ -132,7 +133,8 @@ Copy the generated link — you'll paste it into the client's file in Salesforce
 ---
 
 <p>
-🏠 <a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
+🏠 <a href="https://alebermudez-mgp.github.io/sops-bds/">Home</a> &nbsp;|&nbsp;
+<a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
 <a href="./dag-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
 <a href="./dag-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
 <a href="./dag-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
