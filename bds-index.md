@@ -3,6 +3,19 @@ layout: default
 title: BDS Portfolio — SOPs
 ---
 
+<p>
+🏠 <a href="https://alebermudez-mgp.github.io/sops-bds/">Home</a> &nbsp;|&nbsp;
+<a href="./bds-index">BDS Home</a> &nbsp;|&nbsp;
+<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./schedule-transactions">Schedule Transactions</a>
+</p>
+
+---
+
 # 📚 BDS Portfolio — Standard Operating Procedures
 This repository contains the standard operating procedures for the BDS (Business Debt Solutions) portfolio underwriting team.
 
@@ -74,3 +87,16 @@ All debt types (MCA, LOC, and others) are processed through BDS.
 Email **qa@businessdebtsolutions.com** — CC **ale.b@businessdebtsolutions.com** and **joshua.a@businessdebtsolutions.com**
 
 Do not make assumptions — when in doubt, escalate.
+
+---
+
+<p>
+🏠 <a href="https://alebermudez-mgp.github.io/sops-bds/">Home</a> &nbsp;|&nbsp;
+<a href="./bds-index">BDS Home</a> &nbsp;|&nbsp;
+<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./schedule-transactions">Schedule Transactions</a>
+</p>
