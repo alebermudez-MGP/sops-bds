@@ -10,8 +10,7 @@ title: 01 — Quote Request
 <a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
 <a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
 <a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
-<a href="https://alebermudez-mgp.github.io/sops-bds/bds-calculator.html">Calculator</a>
+<a href="./schedule-transactions">Schedule Transactions</a>
 </p>
 
 ---
@@ -111,13 +110,8 @@ Each opportunity must contain only one type of debt.
 The template must include Portfolio, Score, and Risk Classification.
 <ul>
 <li>If Score or Portfolio is missing → return to Sales immediately and request the missing information.</li>
-<li>If a portfolio is referenced but not specified → ask Sales the question below.</li>
+<li>If a portfolio is referenced but not specified → ask Sales: <em>"Which portfolio did the Risk Score calculator assign?"</em></li>
 </ul>
-
-```
-Which portfolio did the Risk Score calculator assign?
-```
-
 </details>
 
 ---
@@ -140,11 +134,7 @@ Search for the merchant using **all** of the following before creating anything:
 <li><strong>Account is in delinquency status</strong> → review notes and see <a href="./04-special-cases">04 — Special Cases</a> before proceeding.</li>
 <li><strong>Same contact info, different business name</strong> → do not stop the quote. Proceed and include the following note in your Quote Reply to the sales agent:</li>
 </ul>
-
-```
-Here's the Quote. Please be aware that we have an account under the same merchant's name, phone number, or email address. Please clarify before moving forward with the contract request.
-```
-
+<blockquote><em>"Here's the Quote. Please be aware that we have an account under the same merchant's name, phone number, or email address. Please clarify before moving forward with the contract request."</em></blockquote>
 </details>
 
 ---
@@ -234,9 +224,8 @@ Fill in the following fields:
 <li>No need to ask Sales who the assigned agent is.</li>
 <li>The Sales Agent can be changed as long as the Sales Lead remains the same.</li>
 <li>If the Sales Lead is different from what is expected, contact UW Management before proceeding.</li>
-<li>Any request under Sales Lead <strong>Vic Carmine</strong> must be processed under BDS by default.</li>
+<li>Any request under Sales Lead <strong>Vic Carmine</strong> must be processed under BDS.</li>
 </ul>
-⚠️ <strong>Exception:</strong> If the company specifically requires it, a Vic Carmine file may be processed under DAG instead — but only as a documented exception approved by Management. Do not move a Vic Carmine file to DAG on your own judgment.
 </details>
 
 <details>
@@ -301,19 +290,21 @@ Request one or more of the following:
 </ul>
 Once received → restart at Step 6A and 6B using the confirmed name.<br>
 If documentation cannot be obtained → escalate to Management via Webex.
+<br><br>
+📝 <strong>Document Verification:</strong> whenever any of these documents (contract, bank statement) are received — at this step or any other — review them thoroughly and extract the relevant information. As part of this review, update the merchant's name in Salesforce to match the contract (or driver's license, if provided). See <a href="./05-quick-reference#section-6--document-verification">05 — Quick Reference, Section 6</a> for the full document verification checklist.
 </details>
 
 <details>
 <summary>⏳ Enrollment waiting periods</summary>
 <br>
-💡 Note these now — they apply at contract stage. See <a href="./05-quick-reference">05 — Quick Reference</a> for the full breakdown, including the 25-day and 40-day exceptions.
+💡 Note these now — they apply at contract stage.
 <br><br>
 <table>
 <tr><th>Creditor</th><th>Minimum wait</th></tr>
-<tr><td>Standard</td><td>30 days from agreement date. A 25-day exception exists (any portfolio) — confirm with Management before applying.</td></tr>
-<tr><td>Fora &amp; McKenzie</td><td>45 days. If bundled with at least two additional creditors, a 25-day exception may apply. If it comes alone, the exception is 40 days instead. Confirm with Management before applying.</td></tr>
-<tr><td>Everest / Vader</td><td>45 days after funding. Same bundled/alone exception rule as Fora &amp; McKenzie (25 days bundled / 40 days alone). Confirm with Management before applying.</td></tr>
-<tr><td>Byzfunder NY LLC</td><td>30 days for BDS (DAG uses 45 days) — note the approximate funded date in the opportunity.</td></tr>
+<tr><td>Standard</td><td>30 days from agreement date. A 25-day exception exists — confirm with Management before applying.</td></tr>
+<tr><td>Fora &amp; McKenzie</td><td>45 days. If funded between 30–45 days, creditor may only be enrolled with at least two additional creditors. A 25-day exception exists — confirm with Management before applying.</td></tr>
+<tr><td>Everest / Vader</td><td>45 days after funding. If funded between 30–45 days, creditor may only be enrolled with at least two additional creditors. A 25-day exception exists — confirm with Management before applying.</td></tr>
+<tr><td>Byzfunder NY LLC</td><td>30 days — note the approximate funded date in the opportunity.</td></tr>
 <tr><td>Blacklisted creditors</td><td>❌ Never eligible.</td></tr>
 </table>
 </details>
@@ -337,12 +328,7 @@ Lendini and Quickfix are the same company. Their funding appears under the names
 </ul>
 <hr>
 <strong>Reverse Consolidation Companies</strong><br><br>
-Ask Sales the question below:
-
-```
-Are there additional creditors included in this reverse consolidation account?
-```
-
+Ask Sales: <em>"Are there additional creditors included in this reverse consolidation account?"</em>
 <ul>
 <li>If yes → include the reverse consolidation company name AND each individual creditor with their balance.</li>
 <li>If no → include only the reverse consolidation company name and total balance.</li>
@@ -353,11 +339,7 @@ Are there additional creditors included in this reverse consolidation account?
 <li>Enter the original lender's name in Salesforce.</li>
 <li>Add a NOTE and a NEXT STEP with the following text (do not alter the meaning):</li>
 </ul>
-
-```
-File is already with 3rd party collection agency so if it does progress through the process the Negotiators know that there is no need to engage communications with the lender; negotiations will be handled directly with the collection agency.
-```
-
+<blockquote><em>"File is already with 3rd party collection agency so if it does progress through the process the Negotiators know that there is no need to engage communications with the lender; negotiations will be handled directly with the collection agency."</em></blockquote>
 <hr>
 <strong>Creditor not on the Gsheet</strong>
 <ul>
@@ -466,7 +448,7 @@ Include:
 <summary>💳 Credit Card payment rules</summary>
 <br>
 <ol>
-<li>Open the <a href="https://alebermudez-mgp.github.io/sops-bds/bds-calculator.html">BDS Program Cost & CC Payment Calculator</a> and enter the enrolled debt amount.</li>
+<li>Open the new calculator and enter the enrolled debt amount.</li>
 <li>The calculator will show Max and Min CC amounts.</li>
 <li>Always use the <strong>Max</strong> amount.</li>
 <li>Use the <strong>Min</strong> only if Sales requests an exception and Management approves it.</li>
@@ -494,6 +476,8 @@ Enter the CC payment information under the <strong>Card Payment Info</strong> se
 > 🚫 **Special characters:** Never use accented characters or tildes in any Salesforce field.
 
 > 🚫 **Lumpsum payments:** Not available. The closest alternative is a one-month term with two bi-weekly payments.
+
+> 📝 **Document verification:** Any time a document is received (contract, bank statement, license), review it and extract the relevant details — update the merchant's name in Salesforce to match if needed — see [05 — Quick Reference, Section 6](./05-quick-reference#section-6--document-verification).
 
 > 📨 **Documents and emails from clients not yet enrolled, under Sales Lead Rose Walters:** Must be forwarded to teamnotification@businessdebtninjas.com
 
@@ -535,6 +519,5 @@ Enter the CC payment information under the <strong>Card Payment Info</strong> se
 <a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
 <a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
 <a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
-<a href="https://alebermudez-mgp.github.io/sops-bds/bds-calculator.html">Calculator</a>
+<a href="./schedule-transactions">Schedule Transactions</a>
 </p>
