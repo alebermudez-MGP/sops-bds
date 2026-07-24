@@ -206,6 +206,39 @@ The closest available alternative is a one-month term structured into two bi-wee
 
 ---
 
+## Section 6 — Document Verification
+
+<details>
+<summary>📄 Documents to review — what to extract</summary>
+<br>
+Whenever we receive any document — at Quote, Contract Request, or Enrollment — review it thoroughly and extract all relevant information needed to keep our records accurate and up to date. Use the following as references:
+<br><br>
+<strong>Creditor Contracts</strong>
+<ul>
+<li>Owner name</li>
+<li>Business name</li>
+<li>Creditor name</li>
+<li>Funding date</li>
+<li>Debt amount</li>
+<li>Any other relevant contract details</li>
+</ul>
+<strong>Bank Statements</strong>
+<ul>
+<li>Account number</li>
+<li>Business name</li>
+<li>Recent funding deposits</li>
+<li>Any additional information that supports account verification</li>
+</ul>
+</details>
+
+<details>
+<summary>📝 Merchant name must match the document</summary>
+<br>
+As part of document verification: whenever we receive a copy of a contract, the merchant's name in Salesforce must be updated to match the name shown on the contract. If a driver's license is also provided, use the name listed on the license as the reference.
+</details>
+
+---
+
 <p>
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
 <a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
