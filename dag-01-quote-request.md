@@ -4,7 +4,8 @@ title: DAG 01 — Quote Request
 ---
 
 <p>
-🏠 <a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
+🏠 <a href="https://alebermudez-mgp.github.io/sops-bds/">Home</a> &nbsp;|&nbsp;
+<a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
 <a href="./dag-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
 <a href="./dag-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
 <a href="./dag-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
@@ -546,7 +547,8 @@ Enter the CC payment information under the <strong>Card Payment Info</strong> se
 ---
 
 <p>
-🏠 <a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
+🏠 <a href="https://alebermudez-mgp.github.io/sops-bds/">Home</a> &nbsp;|&nbsp;
+<a href="./dag-index">DAG Home</a> &nbsp;|&nbsp;
 <a href="./dag-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
 <a href="./dag-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
 <a href="./dag-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
