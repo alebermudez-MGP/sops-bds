@@ -58,22 +58,70 @@
   margin-top: 28px !important;
 }
 
+/* Summary bleeds to the edges of the box so it reads as a clickable header bar,
+   independent of whatever padding the details box itself uses. */
 .page-content details summary {
   cursor: pointer;
+  list-style: none;
   font-weight: 600;
   font-size: 16px;
   color: #1a3c2e;
-  padding: 4px 0;
+  margin: -14px -18px;
+  padding: 14px 18px;
+  background-color: #eef6f0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Remove the browser's default disclosure triangle so we can draw our own,
+   consistent one below. */
+.page-content details summary::-webkit-details-marker {
+  display: none;
+}
+.page-content details summary::marker {
+  content: "";
+}
+
+/* Explicit "click me" affordance, always visible, that flips label + arrow
+   direction depending on open/closed state. */
+.page-content details summary::after {
+  content: "▸ Click to expand";
+  flex: 0 0 auto;
+  font-weight: 600;
+  font-size: 12px;
+  color: #2eb85c;
+  white-space: nowrap;
+  background-color: #ffffff;
+  border: 1px solid #2eb85c;
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.page-content details[open] summary::after {
+  content: "▾ Click to collapse";
 }
 
 .page-content details summary:hover {
-  color: #2eb85c;
+  background-color: #e2f0e6;
+  color: #157878;
+}
+
+.page-content details summary:hover::after {
+  background-color: #2eb85c;
+  color: #ffffff;
 }
 
 .page-content details[open] summary {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 10px;
+  border-radius: 6px 6px 0 0;
+  border-bottom: 2px solid #2eb85c;
+}
+
+.page-content details[open] summary + * {
+  margin-top: 14px;
 }
 
 /* blockquotes (the ⚠️ Exception / 💡 tip callouts) need breathing room too */
