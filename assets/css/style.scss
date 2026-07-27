@@ -3,8 +3,11 @@
 
 @import "{{ site.theme }}";
 
-/* ===== Section subtitles (## Section X) ===== */
-.page-content h2 {
+/* ===== Section subtitles (## Section X) =====
+   NOTE: this theme's layout wraps content in <main class="main-content">,
+   not .page-content — selectors below must target .main-content or they
+   silently match nothing. */
+.main-content h2 {
   margin-top: 48px;
   margin-bottom: 16px;
   padding: 10px 16px;
@@ -15,12 +18,12 @@
   font-size: 22px;
 }
 
-.page-content h2:first-of-type {
+.main-content h2:first-of-type {
   margin-top: 24px;
 }
 
 /* ===== Collapsible blocks (<details>) ===== */
-.page-content details {
+.main-content details {
   display: block;
   margin-top: 28px !important;
   margin-bottom: 28px !important;
@@ -32,35 +35,35 @@
 }
 
 /* space after ANY element that comes right before a details block */
-.page-content h2 + details,
-.page-content h3 + details,
-.page-content p + details,
-.page-content ul + details,
-.page-content ol + details,
-.page-content table + details,
-.page-content blockquote + details,
-.page-content details + details {
+.main-content h2 + details,
+.main-content h3 + details,
+.main-content p + details,
+.main-content ul + details,
+.main-content ol + details,
+.main-content table + details,
+.main-content blockquote + details,
+.main-content details + details {
   margin-top: 28px !important;
 }
 
 /* space after a details block, before whatever follows */
-.page-content details + h2,
-.page-content details + h3 {
+.main-content details + h2,
+.main-content details + h3 {
   margin-top: 56px !important;
 }
 
-.page-content details + p,
-.page-content details + ul,
-.page-content details + ol,
-.page-content details + table,
-.page-content details + blockquote,
-.page-content details + hr {
+.main-content details + p,
+.main-content details + ul,
+.main-content details + ol,
+.main-content details + table,
+.main-content details + blockquote,
+.main-content details + hr {
   margin-top: 28px !important;
 }
 
 /* Summary bleeds to the edges of the box so it reads as a clickable header bar,
    independent of whatever padding the details box itself uses. */
-.page-content details summary {
+.main-content details summary {
   cursor: pointer;
   list-style: none;
   font-weight: 600;
@@ -79,16 +82,16 @@
 
 /* Remove the browser's default disclosure triangle so we can draw our own,
    consistent one below. */
-.page-content details summary::-webkit-details-marker {
+.main-content details summary::-webkit-details-marker {
   display: none;
 }
-.page-content details summary::marker {
+.main-content details summary::marker {
   content: "";
 }
 
 /* Explicit "click me" affordance, always visible, that flips label + arrow
    direction depending on open/closed state. */
-.page-content details summary::after {
+.main-content details summary::after {
   content: "▸ Click to expand";
   flex: 0 0 auto;
   font-weight: 600;
@@ -101,31 +104,31 @@
   padding: 3px 10px;
 }
 
-.page-content details[open] summary::after {
+.main-content details[open] summary::after {
   content: "▾ Click to collapse";
 }
 
-.page-content details summary:hover {
+.main-content details summary:hover {
   background-color: #e2f0e6;
   color: #157878;
 }
 
-.page-content details summary:hover::after {
+.main-content details summary:hover::after {
   background-color: #2eb85c;
   color: #ffffff;
 }
 
-.page-content details[open] summary {
+.main-content details[open] summary {
   border-radius: 6px 6px 0 0;
   border-bottom: 2px solid #2eb85c;
 }
 
-.page-content details[open] summary + * {
+.main-content details[open] summary + * {
   margin-top: 14px;
 }
 
 /* blockquotes (the ⚠️ Exception / 💡 tip callouts) need breathing room too */
-.page-content blockquote {
+.main-content blockquote {
   margin-top: 20px !important;
   margin-bottom: 20px !important;
   padding: 10px 16px;
