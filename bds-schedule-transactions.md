@@ -5,19 +5,19 @@ title: Schedule Transactions
 
 <p>
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
-<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
-<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
-<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a>
+<a href="./bds-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./bds-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./bds-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./bds-04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./bds-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./bds-schedule-transactions">Schedule Transactions</a>
 </p>
 
 ---
 
 # ⚙️ Schedule Transactions
 
-**This is a supporting reference.** It is called from [01 — Quote Request](./01-quote-request) and [02 — Contract Request](./02-contract-request). It is not a standalone workflow.
+**This is a supporting reference.** It is called from [01 — Quote Request](./bds-01-quote-request) and [02 — Contract Request](./bds-02-contract-request). It is not a standalone workflow.
 
 💡 Always have both tools open before starting this process:
 <ul>
@@ -282,8 +282,8 @@ Once saved, the transaction table will populate on the opportunity. Verify:
 ## ↩️ Return to your workflow
 
 <ul>
-<li>If you came from <strong>Quote Request</strong> → return to <a href="./01-quote-request#step-8----complete-underwriting-and-pre-approval-fields">01 — Quote Request, Step 8</a></li>
-<li>If you came from <strong>Contract Request</strong> → return to <a href="./02-contract-request">02 — Contract Request</a></li>
+<li>If you came from <strong>Quote Request</strong> → return to <a href="./bds-01-quote-request#step-8----complete-underwriting-and-pre-approval-fields">01 — Quote Request, Step 8</a></li>
+<li>If you came from <strong>Contract Request</strong> → return to <a href="./bds-02-contract-request">02 — Contract Request</a></li>
 </ul>
 
 ---
@@ -302,10 +302,10 @@ Use the **Edit Existing** option when an update is needed on a file already sche
 
 <p>
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
-<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
-<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
-<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a>
+<a href="./bds-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./bds-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./bds-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./bds-04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./bds-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./bds-schedule-transactions">Schedule Transactions</a>
 </p>
