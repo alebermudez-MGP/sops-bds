@@ -70,8 +70,8 @@
 
 <script>
 (function () {
-  // Código hasheado (no se guarda en texto plano)
-  var CORRECT_HASH = "a1f3c2"; // hash simple del código
+  // Hashed code (not stored in plain text)
+  var CORRECT_HASH = "a1f3c2"; // simple hash of the code
 
   function simpleHash(str) {
     var hash = 0;
@@ -82,7 +82,7 @@
     return Math.abs(hash).toString(16);
   }
 
-  // Generar el hash real del código asignado
+  // Generate the real hash of the assigned code
   var REAL_CODE_HASH = simpleHash("8525");
 
   function checkAccess() {
@@ -103,11 +103,11 @@
     overlay.id = "bds-lock-overlay";
     overlay.innerHTML =
       '<div id="bds-lock-box">' +
-      '<h2>🔒 Acceso Restringido</h2>' +
-      '<p>SOP BDS &amp; DAG Portfolio Underwriting<br>Ingresa el código de acceso</p>' +
+      '<h2>🔒 Restricted Access</h2>' +
+      '<p>SOP BDS &amp; DAG Portfolio Underwriting<br>Enter the access code</p>' +
       '<input type="password" id="bds-lock-input" maxlength="10" inputmode="numeric" placeholder="••••" autocomplete="off">' +
-      '<button id="bds-lock-btn">Ingresar</button>' +
-      '<div id="bds-lock-error">Código incorrecto. Intenta de nuevo.</div>' +
+      '<button id="bds-lock-btn">Enter</button>' +
+      '<div id="bds-lock-error">Incorrect code. Try again.</div>' +
       "</div>";
 
     document.body.appendChild(overlay);
