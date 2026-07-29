@@ -5,13 +5,13 @@ title: Chirp Review Process
 
 <p>
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
-<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
-<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
-<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
-<a href="./move-payments">Move Payments (MPR)</a>
+<a href="./bds-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./bds-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./bds-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./bds-04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./bds-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./bds-schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
+<a href="./bds-move-payments">Move Payments (MPR)</a>
 </p>
 
 ---
@@ -65,7 +65,7 @@ Use this first. If your finding is listed here, this tells you what to do and wh
 </details>
 
 <details>
-<summary>🏦 Revisión Bancaria y Discrepancias (7–12)</summary>
+<summary>🏦 Banking Review &amp; Discrepancies (7–12)</summary>
 <br>
 <ul>
 <li><a href="#sec7">7. Banking Information Review</a></li>
@@ -213,7 +213,7 @@ Do <strong>not</strong> use: <strong>Request (Information Entered)</strong>. The
 
 ---
 
-## 🏦 Revisión Bancaria y Discrepancias
+## 🏦 Banking Review & Discrepancies
 
 <a id="sec7"></a>
 ### Section 7 — Banking Information Review
@@ -776,11 +776,11 @@ Before closing the Chirp review, confirm:
 
 <p>
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
-<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
-<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
-<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
-<a href="./move-payments">Move Payments (MPR)</a>
+<a href="./bds-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./bds-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./bds-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./bds-04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./bds-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./bds-schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
+<a href="./bds-move-payments">Move Payments (MPR)</a>
 </p>
