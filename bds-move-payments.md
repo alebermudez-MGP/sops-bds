@@ -5,12 +5,12 @@ title: Move Payments (MPR)
 
 <p>
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
-<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
-<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
-<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a>
+<a href="./bds-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./bds-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./bds-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./bds-04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./bds-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./bds-schedule-transactions">Schedule Transactions</a>
 </p>
 
 ---
@@ -134,10 +134,10 @@ Stop the process and document the following note:
 
 <p>
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
-<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
-<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
-<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a>
+<a href="./bds-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./bds-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./bds-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./bds-04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./bds-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./bds-schedule-transactions">Schedule Transactions</a>
 </p>
