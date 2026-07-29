@@ -5,7 +5,7 @@
  *
  * Scope: everything inside .main-content. Targets:
  *   1. <pre> — fenced code blocks (Salesforce note templates in
- *      01-quote-request.md / 02-contract-request.md). Always get a button.
+ *      bds-01-quote-request.md / bds-02-contract-request.md). Always get a button.
  *   2. <blockquote> whose text does NOT start with an emoji. Blockquotes
  *      that start with 💡 ⚠️ 🚫 🔴 📨 📖 etc. are tips/warnings, not
  *      copy-paste note text, and are intentionally skipped.
@@ -17,7 +17,7 @@
  *      or the template follows surrounding instructions after an inline
  *      "___ Template:" label (chirp-review.md Section 16 scenarios).
  *   5. Inline <code> spans with an exact value to paste (SKU/Descripcion
- *      values in paynow-link.md, email subject lines in chirp-review.md).
+ *      values in bds-paynow-link.md, email subject lines in chirp-review.md).
  *
  * Buttons are inserted as children of the existing block (not new sibling
  * wrappers), so the adjacent-sibling spacing rules in style.scss
@@ -30,7 +30,7 @@
     var original = btn.textContent;
 
     function finish(ok) {
-      btn.textContent = ok ? '✅ Copiado' : '⚠️ No se pudo copiar';
+      btn.textContent = ok ? '✅ Copied' : '⚠️ Could not copy';
       btn.disabled = true;
       setTimeout(function () {
         btn.textContent = original;
@@ -79,8 +79,8 @@
     var btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'sop-copy-btn' + (extraClass ? ' ' + extraClass : '');
-    btn.textContent = '📋 Copiar';
-    btn.setAttribute('aria-label', 'Copiar texto');
+    btn.textContent = '📋 Copy';
+    btn.setAttribute('aria-label', 'Copy text');
     btn.addEventListener('click', function (e) {
       e.preventDefault();
       e.stopPropagation();
