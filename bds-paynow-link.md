@@ -5,13 +5,13 @@ title: PayNow Link
 
 <p>
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
-<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
-<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
-<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
-<a href="./move-payments">Move Payments (MPR)</a> &nbsp;|&nbsp;
+<a href="./bds-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./bds-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./bds-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./bds-04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./bds-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./bds-schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
+<a href="./bds-move-payments">Move Payments (MPR)</a> &nbsp;|&nbsp;
 <a href="./chirp-review">Chirp Review Process</a>
 </p>
 
@@ -19,7 +19,7 @@ title: PayNow Link
 
 # 💳 PayNow Link — Generation & Sending
 
-**Trigger:** You need to send a client a secure card payment link (PayNow) — during enrollment ([03 — Enrollment](./03-enrollment), Step 4) or any other time UW needs to collect a card payment.
+**Trigger:** You need to send a client a secure card payment link (PayNow) — during enrollment ([03 — Enrollment](./bds-03-enrollment), Step 4) or any other time UW needs to collect a card payment.
 
 > 💡 UW generates the link directly in NMI — it is **not requested from Management**. Access credentials for NMI are provided by Management.
 
@@ -129,12 +129,12 @@ Copy the generated link — you'll paste it into the client's file in Salesforce
 
 <p>
 🏠 <a href="./">Home</a> &nbsp;|&nbsp;
-<a href="./01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
-<a href="./02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
-<a href="./03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
-<a href="./04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
-<a href="./05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
-<a href="./schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
-<a href="./move-payments">Move Payments (MPR)</a> &nbsp;|&nbsp;
+<a href="./bds-01-quote-request">01 — Quote Request</a> &nbsp;|&nbsp;
+<a href="./bds-02-contract-request">02 — Contract Request</a> &nbsp;|&nbsp;
+<a href="./bds-03-enrollment">03 — Enrollment</a> &nbsp;|&nbsp;
+<a href="./bds-04-special-cases">04 — Special Cases</a> &nbsp;|&nbsp;
+<a href="./bds-05-quick-reference">05 — Quick Reference</a> &nbsp;|&nbsp;
+<a href="./bds-schedule-transactions">Schedule Transactions</a> &nbsp;|&nbsp;
+<a href="./bds-move-payments">Move Payments (MPR)</a> &nbsp;|&nbsp;
 <a href="./chirp-review">Chirp Review Process</a>
 </p>
