@@ -6,12 +6,12 @@ description: Standard Operating Procedures
 
 # 📚 Standard Operating Procedures
 
-Selecciona tu portafolio para ver sus SOPs.
+Select your portfolio to view its SOPs.
 
 ---
 
 ## [🏢 BDS Portfolio](./bds-index)
-Business Debt Solutions — Quote Request, Contract Request, Enrollment, Special Cases, Quick Reference y herramientas de soporte.
+Business Debt Solutions — Quote Request, Contract Request, Enrollment, Special Cases, Quick Reference and support tools.
 
 ## [🏢 DAG Portfolio](./dag-index)
-DAG Portfolio — SOPs de underwriting.
+DAG Portfolio — Underwriting SOPs.
