@@ -207,7 +207,6 @@ Fill in the following fields:
 |-------|-------|
 | Opportunity name | Business name + Type of debt (e.g. "Royal Pearl Haven Realty MCA") |
 | Company name | Select the merchant account |
-| Law firm | ⚠️ Leave blank until further notice |
 | Client Service | Rotate among: Joaquin Moya / Daysie Young / Mason Price — do not always assign the same person |
 | Sales Lead | From template |
 | Sales Agent | Who sent the quote request or is closing the deal |
@@ -470,10 +469,6 @@ Enter the CC payment information under the <strong>Card Payment Info</strong> se
 ---
 
 ## ⚠️ Important reminders
-
-> 🚫 **Law firm field — leave blank:** Immediate update to BDS procedure — leave the **Law firm** field blank on all new entries until further notice.
-
-> 🚫 **Dennis Moore — no new files:** Per GM Team (Josue D. Gonzalez), do not assign any new files to Dennis Moore until further notice. He is temporarily removed from the Client Service rotation.
 
 > 🔴 **Legal professionals:** If the business is related to lawyers, paralegals, or attorneys — check with Management before proceeding.
 
