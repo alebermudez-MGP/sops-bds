@@ -91,18 +91,10 @@ If the quote does not match Salesforce data, do not proceed — clarify with Sal
 <details>
 <summary>📎 1.4 — Banking documentation is attached and valid</summary>
 <br>
-The following must be included with the contract request:
+A Contract Request must include a valid Voided Check <strong>or</strong> an approved alternative document, with the client's Chirp verification completed where required.
 <br><br>
-<strong>Primary (preferred):</strong>
-<ul>
-<li>Valid Voided Check</li>
-</ul>
-<strong>Accepted alternative (no approval needed):</strong>
-<ul>
-<li>Bank Letter <strong>AND</strong> Most Recent Bank Statement</li>
-</ul>
-Any other documentation requires <strong>Sales Management approval</strong> documented in the same email thread.<br><br>
-⚠️ Starter checks and direct deposit forms are <strong>not accepted</strong>.<br><br>
+📖 See <a href="./bds-04-special-cases#section-6--bank-account-updates--verification-workflow">04 — Special Cases, Section 6</a> for the full list of accepted documents, the Chirp verification workflow, discrepancy handling, and the brand-new-account exception.
+<br><br>
 
 <strong>Voided check must include:</strong>
 <ul>
