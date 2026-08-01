@@ -229,28 +229,94 @@ Treat it as a new opportunity rather than reactivating the old one — create a 
 
 ---
 
-## Section 6 — Bank Account Updates
+## Section 6 — Bank Account Updates & Verification Workflow
+
+> 📌 This is the **single source of truth** for banking documentation acceptance — it applies to **both portfolios (BDS and DAG)**, and to **both** scenarios: a new contract request ([02 — Contract Request, Step 1.4](./dag-02-contract-request#step-1--validate-the-request-before-touching-salesforce)) and a bank account update requested by an already-enrolled client.
 
 <details>
-<summary>🏦 Required documentation for bank account updates</summary>
+<summary>🏦 Step 1 — Primary documentation</summary>
 <br>
-Applies to all bank account updates requested by clients — both existing enrolled clients and those requesting a new contract.
+The standard and preferred document is a <strong>valid Voided Check</strong>.
 <br><br>
-Secure <strong>one</strong> of:
+📖 See <a href="./dag-02-contract-request#step-1--validate-the-request-before-touching-salesforce">02 — Contract Request, Step 1.4</a> for full Voided Check field specs and bank-specific handling (Bank of America, Bluevine, Navy Federal Credit Union, etc.).
+</details>
+
+<details>
+<summary>🔁 Step 2 — Accepted alternative (any one, plus Chirp)</summary>
+<br>
+If a Voided Check is not available, accept <strong>any one</strong> of the following:
 <ul>
-<li>A valid Voided Check, or</li>
-<li>An official Bank Letter AND the client's Most Recent Bank Statement.</li>
+<li>Starter Check</li>
+<li>Most Recent Bank Statement</li>
+<li>Bank Letter</li>
+<li>Screenshot of online banking</li>
+<li>Contract with the lender (must clearly show Account Number and Routing Number)</li>
 </ul>
-⚠️ Starter Checks and Direct Deposit Forms are <strong>no longer valid</strong>. Requests without one of the approved options will be delayed.
+⚠️ <strong>Condition:</strong> the client must also complete the <strong>Chirp verification link</strong> so the submitted banking details can be cross-validated against Chirp's data.
+<br><br>
+✅ <strong>No Sales Management approval is required</strong> for any of these alternatives — Chirp validation replaces the old approval step.
+<br><br>
+<strong>Chirp logistics:</strong>
+<ul>
+<li><strong>Sent by:</strong> Customer Service, during the Pre-Welcome (PW) call.</li>
+<li><strong>If the client does not complete it:</strong> Accounting follows up and re-sends the link.</li>
+</ul>
+</details>
+
+<details>
+<summary>⚠️ Step 3 — Discrepancy handling (Chirp mismatch)</summary>
+<br>
+If the information returned by Chirp does not match what the client submitted:
+<ol>
+<li>Ask the client to complete a <strong>new Chirp link</strong>.</li>
+<li>If the mismatch <strong>persists</strong>:
+<ul>
+<li>Require additional documentation (e.g., a Bank Letter), <strong>and</strong></li>
+<li>The <strong>Sales team</strong> must perform a bank verification call to confirm the details directly with the bank.</li>
+<li>The <strong>call recording must be attached as a file</strong> in the same email thread — not just referenced or logged.</li>
+</ul>
+</li>
+</ol>
+
+<strong>📋 Copy/paste — Bank Verification Call Confirmation (Sales → UW):</strong>
+
+<pre>
+Subject: Bank Verification Call Completed – [Business Name]
+
+Hello [UW Agent Name],
+
+As requested, please find attached the recording of the bank verification call completed on [date] for [Business Name].
+
+Call Summary:
+- Bank contacted:
+- Bank representative name (if provided):
+- Account Number / Routing Number / Business Name confirmed match: Y / N
+- Notes:
+
+Please retain this email with the recording attached as part of the account documentation.
+
+Thank you,
+[Sales Agent Name]
+</pre>
 </details>
 
 <details>
 <summary>🆕 Exception — brand new accounts with limited documentation</summary>
 <br>
-For a brand new account where the merchant cannot provide a valid Voided Check or recent statements, obtain <strong>both</strong>:
+For the specific scenario of a <strong>brand new account</strong> where the merchant cannot provide a valid Voided Check or recent statements, you must obtain <strong>both</strong> of the following documents:
 <ul>
-<li>A Starter Check</li>
-<li>An official Bank Letter</li>
+<li>A <strong>Starter Check</strong></li>
+<li>An official <strong>Bank Letter</strong></li>
+</ul>
+This stricter requirement for new accounts remains in place on top of the standard workflow above — the client must <strong>also</strong> complete the <strong>Chirp verification link</strong>, following the same Step 2/Step 3 process if a discrepancy comes up.
+</details>
+
+<details>
+<summary>🚫 What no longer applies</summary>
+<br>
+<ul>
+<li>Starter Checks are <strong>now accepted</strong> as part of the standard alternative list above (Step 2) — this replaces the previous "Starter Checks are no longer valid" rule, provided Chirp validation is completed.</li>
+<li>Sales Management email approval for non-standard documentation is <strong>no longer required</strong> — replaced by Chirp validation (Step 2) and the discrepancy process (Step 3).</li>
 </ul>
 </details>
 
